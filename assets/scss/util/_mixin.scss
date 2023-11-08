@@ -1,0 +1,44 @@
+// 992 안에서 잘 나오면 오케이
+// 전역으로 적용시킨것들은 991 이상으로 다 적용시키는 것이다. 
+
+// [768] ~ 991
+$tablet: 991px;
+
+// [480] ~ 767
+$mobile: 767px;
+
+// [320] ~ 479
+$smallestMobile: 479px;
+
+
+// @mixin max {
+//   // 1440 이상를 꾸미는거다. 
+//   @media screen and (min-width: $max ) {
+//     @content;
+//   }
+// }
+
+
+@mixin tablet {
+
+  // 991 이하를 꾸미는거다. 
+  @media screen and (max-width: $tablet ) {
+    @content;
+  }
+}
+
+@mixin mobile {
+
+  // 767 이하를 꾸미는거다. 
+  @media screen and (max-width: $mobile ) {
+    @content;
+  }
+}
+
+@mixin smallestMobile {
+
+  // 479 이하를 꾸미는거다. 
+  @media screen and (max-width: $smallestMobile ) {
+    @content;
+  }
+}

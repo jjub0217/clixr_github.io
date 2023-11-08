@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+ul {
+  list-style: none;
+}
+
+/* 세팅 */
+body {
+  /* 기본적인 국문의 폰트패밀리 적용 */
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+  letter-spacing: -0.025em;
+  // font-size: 2.06vw;
+  // font-size: 2.6%;
+}
+
+fieldset {
+  border: 0;
+}

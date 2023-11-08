@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clixr Ecommerce</title>
+  <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon" sizes="32x32">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="./assets/js/main.js" defer></script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="skip-header">
+      <a href="#main">본문내용</a>
+    </div>
+    <header class="header">
+      <div class="inner">
+        <div class="logo-wrap">
+          <h1 class="logo">
+            <a href="#">
+              <svg width="95" height="34" viewBox="0 0 71 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.12 14.3C0.12 12.1027 0.610667 10.14 1.592 8.412C2.59467 6.66267 3.94933 5.308 5.656 4.348C7.384 3.36667 9.31467 2.876 11.448 2.876C13.944 2.876 16.1307 3.516 18.008 4.796C19.8853 6.076 21.1973 7.84667 21.944 10.108H16.792C16.28 9.04133 15.5547 8.24133 14.616 7.708C13.6987 7.17467 12.632 6.908 11.416 6.908C10.1147 6.908 8.952 7.21733 7.928 7.836C6.92533 8.43333 6.136 9.28667 5.56 10.396C5.00533 11.5053 4.728 12.8067 4.728 14.3C4.728 15.772 5.00533 17.0733 5.56 18.204C6.136 19.3133 6.92533 20.1773 7.928 20.796C8.952 21.3933 10.1147 21.692 11.416 21.692C12.632 21.692 13.6987 21.4253 14.616 20.892C15.5547 20.3373 16.28 19.5267 16.792 18.46H21.944C21.1973 20.7427 19.8853 22.524 18.008 23.804C16.152 25.0627 13.9653 25.692 11.448 25.692C9.31467 25.692 7.384 25.212 5.656 24.252C3.94933 23.2707 2.59467 21.916 1.592 20.188C0.610667 18.46 0.12 16.4973 0.12 14.3ZM30.2505 1.82V25.5H25.7705V1.82H30.2505ZM36.9488 5.66C36.1594 5.66 35.4981 5.41467 34.9648 4.924C34.4528 4.412 34.1968 3.78267 34.1968 3.036C34.1968 2.28933 34.4528 1.67067 34.9648 1.18C35.4981 0.667999 36.1594 0.411999 36.9488 0.411999C37.7381 0.411999 38.3888 0.667999 38.9008 1.18C39.4341 1.67067 39.7008 2.28933 39.7008 3.036C39.7008 3.78267 39.4341 4.412 38.9008 4.924C38.3888 5.41467 37.7381 5.66 36.9488 5.66ZM39.1568 7.772V25.5H34.6768V7.772H39.1568ZM53.375 25.5L49.727 19.996L46.495 25.5H41.695L47.487 16.604L41.631 7.772H46.687L50.303 13.244L53.567 7.772H58.367L52.543 16.604L58.431 25.5H53.375ZM65.3443 10.524C65.9203 9.58533 66.6669 8.84933 67.5843 8.316C68.5229 7.78267 69.5896 7.516 70.7843 7.516V12.22H69.6003C68.1923 12.22 67.1256 12.5507 66.4003 13.212C65.6963 13.8733 65.3443 15.0253 65.3443 16.668V25.5H60.8643V7.772H65.3443V10.524Z"
+                  fill="white" />
+              </svg>
+              <!-- <span class="blind">clixr 로고</span> -->
+            </a>
+          </h1>
+          <nav class="gnb">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  Pricing
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  FAQ
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="group-util">
+          <ul class="util-list">
+            <li class="btn">
+              <svg width="29" height="33" viewBox="0 0 29 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-outside-1_526_1066" maskUnits="userSpaceOnUse" x="0" y="0" width="29" height="33"
+                  fill="black">
+                  <rect fill="white" width="29" height="33" />
+                  <path
+                    d="M7.47941 9.57924C7.51585 8.78328 7.5037 8.03706 7.58872 7.30328C7.94097 3.90798 10.7711 1.19672 14.0992 1.01017C17.5366 0.823611 20.6339 3.22395 21.3141 6.61924C21.4234 7.17891 21.4477 7.75101 21.4842 8.32311C21.5084 8.72109 21.4842 9.11907 21.4842 9.57924C21.6906 9.57924 21.8485 9.57924 22.0064 9.57924C23.6098 9.57924 25.2252 9.57924 26.8286 9.57924C27.6545 9.57924 27.9946 9.91504 27.9946 10.7608C27.9946 16.0216 28.0067 21.2824 27.9946 26.5433C27.9825 29.6774 25.6868 31.9907 22.6138 31.9907C17.2329 32.0031 11.8521 32.0031 6.47126 31.9907C3.28891 31.9907 1.02969 29.7023 1.0054 26.4438C0.993252 24.4787 1.0054 22.5013 1.0054 20.5362C1.0054 17.3275 1.0054 14.1063 1.0054 10.8976C1.0054 9.86529 1.29691 9.57924 2.30506 9.57924C4.01769 9.57924 5.73033 9.57924 7.47941 9.57924ZM2.86379 11.5194C2.86379 11.7184 2.86379 11.8676 2.86379 12.0293C2.86379 16.8051 2.90023 21.5809 2.85164 26.3692C2.82735 28.4586 4.39423 30.1251 6.5077 30.1003C11.8399 30.0505 17.1722 30.0878 22.5166 30.0754C24.7515 30.0754 26.1605 28.6327 26.1605 26.3692C26.1605 21.5934 26.1605 16.8176 26.1605 12.0293C26.1605 11.8676 26.1605 11.6935 26.1605 11.5318C24.5815 11.5318 23.0632 11.5318 21.5084 11.5318C21.5084 11.7681 21.5084 11.9671 21.5084 12.1661C21.5084 12.7258 21.5206 13.2855 21.4963 13.8451C21.472 14.4172 21.1076 14.8028 20.5975 14.8152C20.063 14.8276 19.6865 14.4421 19.6379 13.8576C19.6258 13.671 19.6379 13.4845 19.6379 13.2979C19.6379 12.7134 19.6379 12.1288 19.6379 11.5443C16.2005 11.5443 12.8117 11.5443 9.41068 11.5443C9.41068 12.3278 9.42282 13.074 9.41068 13.8078C9.38638 14.5167 8.85194 14.952 8.23248 14.7903C7.80736 14.6784 7.55228 14.3053 7.55228 13.7581C7.54014 13.0243 7.55228 12.2781 7.55228 11.5194C5.93682 11.5194 4.43067 11.5194 2.86379 11.5194ZM19.5772 9.55437C19.9173 6.85555 18.982 4.71638 17.0021 3.57218C15.2045 2.53991 12.9696 2.70159 11.3298 4.04479C9.59287 5.47504 9.16775 7.3779 9.45926 9.55437C12.8238 9.55437 16.1883 9.55437 19.5772 9.55437Z" />
+                </mask>
+                <path
+                  d="M7.47941 9.57924C7.51585 8.78328 7.5037 8.03706 7.58872 7.30328C7.94097 3.90798 10.7711 1.19672 14.0992 1.01017C17.5366 0.823611 20.6339 3.22395 21.3141 6.61924C21.4234 7.17891 21.4477 7.75101 21.4842 8.32311C21.5084 8.72109 21.4842 9.11907 21.4842 9.57924C21.6906 9.57924 21.8485 9.57924 22.0064 9.57924C23.6098 9.57924 25.2252 9.57924 26.8286 9.57924C27.6545 9.57924 27.9946 9.91504 27.9946 10.7608C27.9946 16.0216 28.0067 21.2824 27.9946 26.5433C27.9825 29.6774 25.6868 31.9907 22.6138 31.9907C17.2329 32.0031 11.8521 32.0031 6.47126 31.9907C3.28891 31.9907 1.02969 29.7023 1.0054 26.4438C0.993252 24.4787 1.0054 22.5013 1.0054 20.5362C1.0054 17.3275 1.0054 14.1063 1.0054 10.8976C1.0054 9.86529 1.29691 9.57924 2.30506 9.57924C4.01769 9.57924 5.73033 9.57924 7.47941 9.57924ZM2.86379 11.5194C2.86379 11.7184 2.86379 11.8676 2.86379 12.0293C2.86379 16.8051 2.90023 21.5809 2.85164 26.3692C2.82735 28.4586 4.39423 30.1251 6.5077 30.1003C11.8399 30.0505 17.1722 30.0878 22.5166 30.0754C24.7515 30.0754 26.1605 28.6327 26.1605 26.3692C26.1605 21.5934 26.1605 16.8176 26.1605 12.0293C26.1605 11.8676 26.1605 11.6935 26.1605 11.5318C24.5815 11.5318 23.0632 11.5318 21.5084 11.5318C21.5084 11.7681 21.5084 11.9671 21.5084 12.1661C21.5084 12.7258 21.5206 13.2855 21.4963 13.8451C21.472 14.4172 21.1076 14.8028 20.5975 14.8152C20.063 14.8276 19.6865 14.4421 19.6379 13.8576C19.6258 13.671 19.6379 13.4845 19.6379 13.2979C19.6379 12.7134 19.6379 12.1288 19.6379 11.5443C16.2005 11.5443 12.8117 11.5443 9.41068 11.5443C9.41068 12.3278 9.42282 13.074 9.41068 13.8078C9.38638 14.5167 8.85194 14.952 8.23248 14.7903C7.80736 14.6784 7.55228 14.3053 7.55228 13.7581C7.54014 13.0243 7.55228 12.2781 7.55228 11.5194C5.93682 11.5194 4.43067 11.5194 2.86379 11.5194ZM19.5772 9.55437C19.9173 6.85555 18.982 4.71638 17.0021 3.57218C15.2045 2.53991 12.9696 2.70159 11.3298 4.04479C9.59287 5.47504 9.16775 7.3779 9.45926 9.55437C12.8238 9.55437 16.1883 9.55437 19.5772 9.55437Z"
+                  fill="white" />
+              </svg>
+              <div class="cart-quantity">0</div>
+            </li>
+            <li class="link-getClixr1">
+              <a href="">
+                Copy This Site
+              </a>
+            </li>
+            <li class="burgerBtn" aria-expanded="false" aria-haspopup="menu" aria-label="메뉴열기">
+              <span class="bar positionTop"></span>
+              <span class="bar positionBottom"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <section class="section-slogan">
+        <h2 class="blind">슬로건</h2>
+        <div class="slide-text">
+          <p class="text1">We’re Clixr</p>
+          <p class="text2">We make</p>
+          <div class="swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                Cool Products
+              </li>
+              <li class="swiper-slide">
+                Good Stuff
+                <span class="emoji">😍</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="marquee-area">
+          <div class="marquee">
+            <ul class="logo-list">
+              <li class="logo-item">
+                Logo
+              </li>
+              <li class="logo-item">
+                Logo
+              </li>
+              <li class="logo-item">
+                Logo
+              </li>
+              <li class="logo-item">
+                Logo
+              </li>
+              <li class="logo-item">
+                Logo
+              </li>
+              <li class="logo-item">
+                Logo
+              </li>
+              <li class="logo-item">
+                Logo
+              </li>
+            </ul>
+            <ul class="logo-list">
+              <li class="logo-item">
+                Logo
+              </li>
+              <li class="logo-item">
+                Logo
+              </li>
+              <li class="logo-item">
+                Logo
+              </li>
+              <li class="logo-item">
+                Logo
+              </li>
+              <li class="logo-item">
+                Logo
+              </li>
+              <li class="logo-item">
+                Logo
+              </li>
+              <li class="logo-item">
+                Logo
+              </li>
+            </ul>
+            <ul class="logo-list">
+              <li class="logo-item">
+                Logo
+              </li>
+              <li class="logo-item">
+                Logo
+              </li>
+              <li class="logo-item">
+                Logo
+              </li>
+              <li class="logo-item">
+                Logo
+              </li>
+              <li class="logo-item">
+                Logo
+              </li>
+              <li class="logo-item">
+                Logo
+              </li>
+              <li class="logo-item">
+                Logo
+              </li>
+            </ul>
+          </div>
+          <a href="" class="link-getClixr2">
+            <p class="border">
+              <span class="circle">Get Clixr</span>
+            </p>
+          </a>
+        </div>
+        <div class="panels">
+          <!-- container : div -->
+          <ul class="top-panel">
+            <!-- panel: section -->
+            <li class="panel">
+              <!-- col-6 : div -->
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/product_card5-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/product_card5-800.jpg">
+                  <source media="(max-width: 991px)" srcset="./assets/images/product_card5-1080.jpg">
+                  <img src="./assets/images/product_card5.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="panel">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/shaping_card2-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/shaping_card2-800.jpg">
+                  <img src="./assets/images/shaping_card2.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="panel">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/newsletter5-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/newsletter5-800.jpg">
+                  <img src="./assets/images/newsletter5.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="panel">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/newsletter1-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/newsletter1-800.jpg">
+                  <source media="(max-width: 991px)" srcset="./assets/images/newsletter1-1080.jpg">
+                  <img src="./assets/images/newsletter1.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="panel">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/newsletter2-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/newsletter2-800.jpg">
+                  <source media="(max-width: 991px)" srcset="./assets/images/newsletter2-1080.jpg">
+                  <img src="./assets/images/newsletter2.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="panel">
+              <!-- col-6 : div -->
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/product_card5-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/product_card5-800.jpg">
+                  <source media="(max-width: 991px)" srcset="./assets/images/product_card5-1080.jpg">
+                  <img src="./assets/images/product_card5.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="panel">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/shaping_card2-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/shaping_card2-800.jpg">
+                  <img src="./assets/images/shaping_card2.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="panel">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/newsletter5-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/newsletter5-800.jpg">
+                  <img src="./assets/images/newsletter5.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="panel">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/newsletter1-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/newsletter1-800.jpg">
+                  <source media="(max-width: 991px)" srcset="./assets/images/newsletter1-1080.jpg">
+                  <img src="./assets/images/newsletter1.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="panel">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/newsletter2-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/newsletter2-800.jpg">
+                  <source media="(max-width: 991px)" srcset="./assets/images/newsletter2-1080.jpg">
+                  <img src="./assets/images/newsletter2.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+          </ul>
+          <ul class="bottom-panel">
+            <!-- panel: section -->
+            <li class="reverse-panel">
+              <!-- col-6 : div -->
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/product_card2-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/product_card2-800.jpg">
+                  <img src="./assets/images/product_card2.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="reverse-panel">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/newsletter6-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/newsletter6-800.jpg">
+                  <source media="(max-width: 991px)" srcset="./assets/images/newsletter6-1080.jpg">
+                  <img src="./assets/images/newsletter6.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="reverse-panel">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/product_card4-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/product_card4-800.jpg">
+                  <img src="./assets/images/product_card4.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="reverse-panel">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/product_card1-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/product_card1-800.jpg">
+                  <source media="(max-width: 991px)" srcset="./assets/images/product_card1-1080.jpg">
+                  <img src="./assets/images/product_card1.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="reverse-panel">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/newsletter7-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/newsletter7-800.jpg">
+                  <source media="(max-width: 991px)" srcset="./assets/images/newsletter7-1080.jpg">
+                  <img src="./assets/images/newsletter7.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="reverse-panel">
+              <!-- col-6 : div -->
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/product_card2-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/product_card2-800.jpg">
+                  <img src="./assets/images/product_card2.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="reverse-panel">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/newsletter6-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/newsletter6-800.jpg">
+                  <source media="(max-width: 991px)" srcset="./assets/images/newsletter6-1080.jpg">
+                  <img src="./assets/images/newsletter6.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="reverse-panel">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/product_card4-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/product_card4-800.jpg">
+                  <img src="./assets/images/product_card4.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="reverse-panel">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/product_card1-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/product_card1-800.jpg">
+                  <source media="(max-width: 991px)" srcset="./assets/images/product_card1-1080.jpg">
+                  <img src="./assets/images/product_card1.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="reverse-panel">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/newsletter1-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/newsletter1-800.jpg">
+                  <source media="(max-width: 991px)" srcset="./assets/images/newsletter1-1080.jpg">
+                  <img src="./assets/images/newsletter1.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="shadow-box"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-about">
+        <div class="marquee-area">
+          <div class="marquee">
+            <div class="text">
+              <span>Amazing</span>
+              <span>Awsome</span>
+            </div>
+            <div class="text">
+              <span>Amazing</span>
+              <span>Awsome</span>
+            </div>
+            <div class="text">
+              <span>Amazing</span>
+              <span>Awsome</span>
+            </div>
+          </div>
+        </div>
+        <div class="desc-box">
+          <div class="inner">
+            <h2 class="headline">About</h2>
+            <p class="desc">
+              We elevate <span class="underPoint-green">phenomenal</span> solutions for growth by translating their
+              future
+              potential into a
+              strategic brand
+              narrative and
+              authentic digital presence.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-shaping">
+        <div class="pc-inner">
+          <div class="imageBox left">
+            <div class="image image1">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/shaping_card1-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/shaping_card1-800.jpg">
+                <source media="(max-width: 991px)" srcset="./assets/images/shaping_card1-1080.jpg">
+                <img src="./assets/images/shaping_card1.jpg" alt="">
+              </picture>
+            </div>
+            <div class="image image2">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/shaping_card2-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/shaping_card2-800.jpg">
+                <img src="./assets/images/shaping_card2.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+          <div class="text-box">
+            <h2 class="headline">We&#180;re Shaping Industry</h2>
+            <a href="" class="link-getClixr2">
+              <p class="border">
+                <span class="circle">Get Clixr</span>
+              </p>
+            </a>
+          </div>
+          <div class="imageBox right">
+            <div class="image image1">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/shaping_card3-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/shaping_card3-800.jpg">
+                <img src="./assets/images/shaping_card3.jpg" alt="">
+              </picture>
+            </div>
+            <div class="image image2">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/shaping_card4-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/shaping_card4-800.jpg">
+                <img src="./assets/images/shaping_card4.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="mo-inner">
+          <div class="imageBox top">
+            <div class="image image1">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/shaping_card1-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/shaping_card1-800.jpg">
+                <source media="(max-width: 991px)" srcset="./assets/images/shaping_card1-1080.jpg">
+                <img src="./assets/images/shaping_card1.jpg" alt="">
+              </picture>
+            </div>
+            <div class="image image2">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/shaping_card2-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/shaping_card2-800.jpg">
+                <img src="./assets/images/shaping_card2.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+          <div class="text-box">
+            <h2 class="headline">We&#180;re Shaping Industry</h2>
+            <a href="" class="link-getClixr2">
+              <p class="border">
+                <span class="circle">Get Clixr</span>
+              </p>
+            </a>
+          </div>
+          <div class="imageBox bottom">
+            <div class="image image1">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/shaping_card3-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/shaping_card3-800.jpg">
+                <img src="./assets/images/shaping_card3.jpg" alt="">
+              </picture>
+            </div>
+            <div class="image image2">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/shaping_card4-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/shaping_card4-800.jpg">
+                <img src="./assets/images/shaping_card4.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-product">
+        <div class="inner">
+          <div class="images-box">
+            <div class="image image1">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/product_card1-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/product_card1-800.jpg">
+                <source media="(max-width: 991px)" srcset="./assets/images/product_card1-1080.jpg">
+                <img src="./assets/images/product_card1.jpg" alt="">
+              </picture>
+            </div>
+            <div class="image image2">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/product_card2-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/product_card2-800.jpg">
+                <img src="./assets/images/product_card2.jpg" alt="">
+              </picture>
+            </div>
+            <div class="image image3">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/shaping_card3-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/shaping_card3-800.jpg">
+                <img src="./assets/images/shaping_card3.jpg" alt="">
+              </picture>
+            </div>
+            <div class="image image4">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/product_card4-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/product_card4-800.jpg">
+                <img src="./assets/images/product_card4.jpg" alt="">
+              </picture>
+            </div>
+            <div class="image image5">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/product_card5-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/product_card5-800.jpg">
+                <source media="(max-width: 991px)" srcset="./assets/images/product_card5-1080.jpg">
+                <img src="./assets/images/product_card5.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+          <div class="text-box">
+            <h2 class="headline">
+              Unleash Your Potential with our
+              <span>Product
+                <a href="" class="link-getClixr1">
+                  Get Clixr
+                </a>
+              </span>
+            </h2>
+          </div>
+        </div>
+
+      </section>
+      <section class="section-potential">
+        <div class="inner">
+          <!-- images-box -->
+          <div class="top">
+            <!-- image -->
+            <div class="left">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/shaping_card2-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/shaping_card2-800.jpg">
+                <img src="./assets/images/shaping_card2.jpg" alt="">
+              </picture>
+            </div>
+            <div class="right">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/newsletter2-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/newsletter2-800.jpg">
+                <source media="(max-width: 991px)" srcset="./assets/images/newsletter2-1080.jpg">
+                <img src="./assets/images/newsletter2.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="text-box">
+              <h2 class="headline">
+                <span>Real</span>
+                Pottential
+              </h2>
+              <div class="bottom-text">
+                <a href="" class="link-getClixr2">
+                  <span>Get Clixr</span>
+                  <p class="border">
+                    <span class="circle">
+                      <span class="arrow-white"></span>
+                    </span>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="image-box">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/product_card5-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/product_card5-800.jpg">
+                <source media="(max-width: 991px)" srcset="./assets/images/product_card5-1080.jpg">
+                <img src="./assets/images/product_card5.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section class="section-all">
+        <div class="text-box">
+          <h2 class="headline">All In One <span>Product</span>
+          </h2>
+          <a href="" class="link-more">
+            <span class="underPoint-green">Learn more</span>
+            <span class="arrow-green"></span>
+          </a>
+        </div>
+        <div class="images-box">
+          <div class="image left">
+            <picture>
+              <source media="(max-width: 479px)" srcset="./assets/images/product_card4-500.jpg">
+              <source media="(max-width: 767px)" srcset="./assets/images/product_card4-800.jpg">
+              <img src="./assets/images/product_card4.jpg" alt="">
+            </picture>
+          </div>
+          <div class="image right">
+            <picture>
+              <source media="(max-width: 479px)" srcset="./assets/images/newsletter7-500.jpg">
+              <source media="(max-width: 767px)" srcset="./assets/images/newsletter7-800.jpg">
+              <source media="(max-width: 991px)" srcset="./assets/images/newsletter7-1080.jpg">
+              <img src="./assets/images/newsletter7.jpg" alt="">
+            </picture>
+          </div>
+          <div class="image center">
+            <picture>
+              <source media="(max-width: 479px)" srcset="./assets/images/product_card1-500.jpg">
+              <source media="(max-width: 767px)" srcset="./assets/images/product_card1-800.jpg">
+              <source media="(max-width: 991px)" srcset="./assets/images/product_card5-1080.jpg">
+              <img src="./assets/images/product_card5.jpg" alt="">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="section-power">
+        <div class="inner">
+          <h2 class="headline">Unlock your <span>super power</span></h2>
+        </div>
+        <div class="panels">
+          <ul class="panels-list">
+            <li class="panel-item">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/product_card5-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/product_card5-800.jpg">
+                  <source media="(max-width: 991px)" srcset="./assets/images/product_card5-1080.jpg">
+                  <img src="./assets/images/product_card5.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="panel-item">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/power-card2-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/power-card2-800.jpg">
+                  <source media="(max-width: 991px)" srcset="./assets/images/power-card2-1080.jpg">
+                  <img src="./assets/images/power-card2.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="panel-item">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/newsletter5-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/newsletter5-800.jpg">
+                  <img src="./assets/images/newsletter5.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="panel-item">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/product_card4-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/product_card4-800.jpg">
+                  <img src="./assets/images/product_card4.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="panel-item">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/newsletter6-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/newsletter6-800.jpg">
+                  <source media="(max-width: 991px)" srcset="./assets/images/newsletter6-1080.jpg">
+                  <img src="./assets/images/newsletter6.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="panel-item">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/power_card3-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/power_card3-800.jpg">
+                  <img src="./assets/images/power_card3.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="panel-item">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/shaping_card2-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/shaping_card2-800.jpg">
+                  <img src="./assets/images/shaping_card2.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="panel-item">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/newsletter5-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/newsletter5-800.jpg">
+                  <img src="./assets/images/newsletter5.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="panel-item">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/newsletter1-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/newsletter1-800.jpg">
+                  <source media="(max-width: 991px)" srcset="./assets/images/newsletter1-1080.jpg">
+                  <img src="./assets/images/newsletter1.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="panel-item">
+              <div class="image-box">
+                <picture>
+                  <source media="(max-width: 479px)" srcset="./assets/images/newsletter2-500.jpg">
+                  <source media="(max-width: 767px)" srcset="./assets/images/newsletter2-800.jpg">
+                  <source media="(max-width: 991px)" srcset="./assets/images/newsletter2-1080.jpg">
+                  <img src="./assets/images/newsletter2.jpg" alt="">
+                </picture>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="inner">
+          <p class="desc"><span>Amazing</span>& unique</p>
+        </div>
+      </section>
+      <section class="section-audience">
+        <div class="inner">
+          <div class="image-box">
+            <div class="image">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/audience-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/audience-800.jpg">
+                <source media="(max-width: 991px)" srcset="./assets/images/audience-1080.jpg">
+                <img src="./assets/images/audience.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+          <div class="text-box">
+            <h2 class="headline">
+              <span class="underPoint-green">Wow</span>
+              <span>Your Audience</span>
+            </h2>
+            <a href="" class="link-getClixr2" aria-label="get clixr">
+              <p class="border">
+                <span class="circle">
+                  <span class="long-arrow"></span>
+                </span>
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section-happy">
+        <div class="inner">
+          <div class="image-box top">
+            <div class="image image1">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/newsletter2-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/newsletter2-800.jpg">
+                <source media="(max-width: 991px)" srcset="./assets/images/newsletter2-1080.jpg">
+                <img src="./assets/images/newsletter2.jpg" alt="">
+              </picture>
+            </div>
+            <div class="image image2">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/happy-card1-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/happy-card1-800.jpg">
+                <img src="./assets/images/happy-card1.jpg" alt="">
+              </picture>
+            </div>
+            <div class="image image3">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/newsletter1-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/newsletter1-800.jpg">
+                <source media="(max-width: 991px)" srcset="./assets/images/newsletter1-1080.jpg">
+                <img src="./assets/images/newsletter1.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+          <div class="text-box">
+            <p class="underPoint-red">+1M</p>
+            <h2 class="headline">Happy Customers</h2>
+            <a href="" class="link-more">
+              <span class="underPoint-green">Read Reviews</span>
+            </a>
+          </div>
+          <div class="image-box bottom">
+            <div class="image image1">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/happy-card2-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/happy-card2-800.jpg">
+                <img src="./assets/images/happy-card2.jpg" alt="">
+              </picture>
+            </div>
+            <div class="image image2">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/product_card5-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/product_card5-800.jpg">
+                <source media="(max-width: 991px)" srcset="./assets/images/product_card5-1080.jpg">
+                <img src="./assets/images/product_card5.jpg" alt="">
+              </picture>
+            </div>
+            <div class="image image3">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/newsletter7-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/newsletter7-800.jpg">
+                <source media="(max-width: 991px)" srcset="./assets/images/newsletter7-1080.jpg">
+                <img src="./assets/images/newsletter7.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="inner-mo">
+          <div class="top">
+            <div class="image image1">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/newsletter2-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/newsletter2-800.jpg">
+                <source media="(max-width: 991px)" srcset="./assets/images/newsletter2-1080.jpg">
+                <img src="./assets/images/newsletter2.jpg" alt="">
+              </picture>
+            </div>
+            <div class="image image2">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/happy-card1-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/happy-card1-800.jpg">
+                <img src="./assets/images/happy-card1.jpg" alt="">
+              </picture>
+            </div>
+            <div class="image image3">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/newsletter1-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/newsletter1-800.jpg">
+                <source media="(max-width: 991px)" srcset="./assets/images/newsletter1-1080.jpg">
+                <img src="./assets/images/newsletter1.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+          <div class="text-box">
+
+            <h2 class="headline">
+              <span class="underPoint-red">+1M</span>Happy Customers
+            </h2>
+            <a href="" class="link-more">
+              <span class="underPoint-green">Read Reviews</span>
+            </a>
+          </div>
+          <div class="bottom">
+            <div class="image image1">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/happy-card2-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/happy-card2-800.jpg">
+                <img src="./assets/images/happy-card2.jpg" alt="">
+              </picture>
+            </div>
+            <div class="image image2">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/product_card5-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/product_card5-800.jpg">
+                <source media="(max-width: 991px)" srcset="./assets/images/product_card5-1080.jpg">
+                <img src="./assets/images/product_card5.jpg" alt="">
+              </picture>
+            </div>
+            <div class="image image3">
+              <picture>
+                <source media="(max-width: 479px)" srcset="./assets/images/newsletter7-500.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/newsletter7-800.jpg">
+                <source media="(max-width: 991px)" srcset="./assets/images/newsletter7-1080.jpg">
+                <img src="./assets/images/newsletter7.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-works">
+        <div class="inner">
+          <div class="text-box left">
+            <h2 class="headline">How <span>It</span> Works</h2>
+          </div>
+          <div class="video-box">
+            <div class="video video1">
+              <!-- playsinline : PC나 안드로이드에서 비디오태그를 볼때는 자동재생처리시 인라인으로 볼수 있지만, IOS인 아이폰이나 아이패드에서 보면 전체화면으로 처리되는 것을 막는 속성  -->
+              <video muted playsinline poster="./assets/images/product_card5.jpg">
+                <source src="./assets/images/works-video.mp4" data-wf-ignore="true">
+              </video>
+            </div>
+            <div class="video video2">
+              <video muted playsinline poster="./assets/images/newsletter7.jpg">
+                <source src="./assets/images/works-video.mp4">
+              </video>
+            </div>
+            <div class="video video3">
+              <video muted playsinline poster="./assets/images/newsletter2.jpg">
+                <source src="./assets/images/works-video.mp4">
+              </video>
+            </div>
+            <div class="video video4">
+              <video autoplay loop muted playsinline poster="./assets/images/video-poster.jpg">
+                <source src="./assets/images/works-video.mp4" data-wf-ignore="true">
+              </video>
+              <button class="video-pause" aria-label="비디오 정지">
+              </button>
+            </div>
+          </div>
+          <div class="text-box right">
+            <p class="desc">
+              We elevate <span>phenomenal</span> solutions for growth by translating their future potential into a
+              strategic brand
+              narrative
+            </p>
+            <a href="" class="link-getClixr1">
+              Get Clixr
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section-get">
+        <div class="marquee-area">
+          <div class="marquee">
+            <div class="text">
+              <span>Phenomenal</span>
+              <span>Template</span>
+            </div>
+            <div class="text">
+              <span>Phenomenal</span>
+              <span>Template</span>
+            </div>
+            <div class="text">
+              <span>Phenomenal</span>
+              <span>Template</span>
+            </div>
+          </div>
+        </div>
+        <div class="desc-box">
+          <div class="inner">
+            <div class="left">
+              <h2 class="headline">What you’ll get</h2>
+              <a href="" class="link-getClixr1">
+                Get Clixr
+              </a>
+            </div>
+            <div class="right">
+              <p class="desc">
+                High-Quality Assets
+                Life-Time Support
+                Fast Delivery
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-price">
+        <h2 class="blind">price</h2>
+        <div class="inner">
+          <div class="left">
+            <div class="left-inner">
+              <div class="price-area">
+                <div class="gradient-circle"></div>
+                <h3 class="headline">Lite</h3>
+                <p class="desc">Starting at</p>
+                <strong>14.99/mo</strong>
+                <p class="desc">Lorem ipsum dolor</p>
+              </div>
+              <a href="" class="link-getClixr1">
+                Get
+              </a>
+              <ul class="spec-list">
+                <li class="spec-item">Etiam sodales ac felis id interdum</li>
+                <li class="spec-item">Etiam sodales ac felis id interdum</li>
+                <li class="spec-item">Etiam sodales ac felis id interdum</li>
+                <li class="spec-item">Etiam sodales ac felis id interdum</li>
+                <li class="spec-item">Etiam sodales ac felis id interdum</li>
+                <li class="spec-item">Etiam sodales ac felis id interdum</li>
+              </ul>
+            </div>
+          </div>
+          <div class="center">
+            <div class="center-inner">
+              <div class="price-area">
+                <div class="gradient-circle"></div>
+                <h3 class="headline">Pro</h3>
+                <p class="desc">Starting at</p>
+                <strong>14.99/mo</strong>
+                <p class="desc">Lorem ipsum dolor</p>
+              </div>
+              <a href="" class="link-getClixr1">
+                Get
+              </a>
+              <ul class="spec-list">
+                <li class="spec-item">Etiam sodales ac felis id interdum</li>
+                <li class="spec-item">Etiam sodales ac felis id interdum</li>
+                <li class="spec-item">Etiam sodales ac felis id interdum</li>
+                <li class="spec-item">Etiam sodales ac felis id interdum</li>
+                <li class="spec-item">Etiam sodales ac felis id interdum</li>
+                <li class="spec-item">Etiam sodales ac felis id interdum</li>
+              </ul>
+            </div>
+          </div>
+          <div class="right">
+            <div class="right-inner">
+              <div class="price-area">
+                <div class="gradient-circle"></div>
+                <h3 class="headline">Max</h3>
+                <p class="desc">Starting at</p>
+                <strong>14.99/mo</strong>
+                <p class="desc">Lorem ipsum dolor</p>
+              </div>
+              <a href="" class="link-getClixr1">
+                Get
+              </a>
+              <ul class="spec-list">
+                <li class="spec-item">Etiam sodales ac felis id interdum</li>
+                <li class="spec-item">Etiam sodales ac felis id interdum</li>
+                <li class="spec-item">Etiam sodales ac felis id interdum</li>
+                <li class="spec-item">Etiam sodales ac felis id interdum</li>
+                <li class="spec-item">Etiam sodales ac felis id interdum</li>
+                <li class="spec-item">Etiam sodales ac felis id interdum</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-free">
+        <div class="inner">
+          <div class="top">
+            <div class="text-box">
+              <div class="left">
+                <h2 class="headline">Try It for Free!</h2>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat est at quam
+                  bibendum,
+                  non ultrices risus imperdiet.
+                  Fusce sollicitudin in mauris vel tristique.</p>
+              </div>
+              <div class="right">
+                <a href="" class="link-getClixr2" aria-label="get clixr">
+                  <p class="border">
+                    <span class="circle">
+                      <span class="long-arrow"></span>
+                    </span>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="left">
+              <div class="text-box">
+                <div class="headline-wrap">
+                  <h2 class="headline">Easy</h2>
+                  <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat est at quam
+                    bibendum, non ultrices risus imperdiet.
+                    Fusce sollicitudin in mauris vel tristique.</p>
+                </div>
+                <ul class="price-list">
+                  <li class="price-item">
+                    <a href="" class="link-getClixr2" aria-label="get clixr">
+                      Learn more about Clixr
+                      <p class="border">
+                        <span class="circle">
+                          <span class="long-arrow"></span>
+                        </span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="price-item">
+                    <a href="" class="link-getClixr2" aria-label="get clixr">Everything about Clixr
+                      <p class="border">
+                        <span class="circle">
+                          <span class="long-arrow"></span>
+                        </span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="price-item">
+                    <a href="" class="link-getClixr2" aria-label="get clixr">All the features
+                      <p class="border">
+                        <span class="circle">
+                          <span class="long-arrow"></span>
+                        </span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="price-item">
+                    <a href="" class="link-getClixr2" aria-label="get clixr">Checkout our works<p class="border">
+                        <span class="circle">
+                          <span class="long-arrow"></span>
+                        </span>
+                      </p></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="right">
+              <div class="text-box">
+                <div class="headline-wrap">
+                  <h2 class="headline">0% Fee</h2>
+                  <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat est at quam
+                    bibendum, non ultrices risus imperdiet.
+                    Fusce sollicitudin in mauris vel tristique.</p>
+                </div>
+                <ul class="price-list">
+                  <li class="price-item">
+                    <a href="" class="link-getClixr2" aria-label="get clixr">
+                      Learn more about Clixr
+                      <p class="border">
+                        <span class="circle">
+                          <span class="long-arrow"></span>
+                        </span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="price-item">
+                    <a href="" class="link-getClixr2" aria-label="get clixr">Everything about Clixr
+                      <p class="border">
+                        <span class="circle">
+                          <span class="long-arrow"></span>
+                        </span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="price-item">
+                    <a href="" class="link-getClixr2" aria-label="get clixr">All the features
+                      <p class="border">
+                        <span class="circle">
+                          <span class="long-arrow"></span>
+                        </span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="price-item">
+                    <a href="" class="link-getClixr2" aria-label="get clixr">Checkout our works
+                      <p class="border">
+                        <span class="circle">
+                          <span class="long-arrow"></span>
+                        </span>
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-faq">
+        <div class="inner">
+          <h2 class="headline">Frequently <span>asked</span> questions</h2>
+          <ul class="faq-list">
+            <li class="faq-item">
+              <a href="" class="link-getClixr2" aria-label="get clixr">
+                How can our SaaS product benefit your business?
+                <p class="border">
+                  <span class="circle">
+                    <span class="plusBtn">
+                      <span class="bar positionVertical"></span>
+                      <span class="bar positionHorizon"></span>
+                    </span>
+                  </span>
+                </p>
+              </a>
+              <ul class="sub-list">
+                <li class="sub-item">
+                  Our SaaS product can benefit your business by automating time-consuming tasks, improving
+                  collaboration and communication
+                  between team members, and providing real-time data insights to help you make informed business
+                  decisions. It can also
+                  reduce costs associated with on-premise software solutions.
+                </li>
+              </ul>
+            </li>
+            <li class="faq-item">
+              <a href="" class="link-getClixr2" aria-label="get clixr">
+                How easy is it to use our SaaS product?
+                <p class="border">
+                  <span class="circle">
+                    <span class="plusBtn">
+                      <span class="bar positionVertical"></span>
+                      <span class="bar positionHorizon"></span>
+                    </span>
+                  </span>
+                </p>
+              </a>
+              <ul class="sub-list">
+                <li class="sub-item">
+                  Our SaaS product can benefit your business by automating time-consuming tasks, improving
+                  collaboration and communication
+                  between team members, and providing real-time data insights to help you make informed business
+                  decisions. It can also
+                  reduce costs associated with on-premise software solutions.
+                </li>
+              </ul>
+            </li>
+            <li class="faq-item">
+              <a href="" class="link-getClixr2" aria-label="get clixr">
+                What is our SaaS product?
+                <p class="border">
+                  <span class="circle">
+                    <span class="plusBtn">
+                      <span class="bar positionVertical"></span>
+                      <span class="bar positionHorizon"></span>
+                    </span>
+                  </span>
+                </p>
+              </a>
+              <ul class="sub-list">
+                <li class="sub-item">
+                  Our SaaS product can benefit your business by automating time-consuming tasks, improving
+                  collaboration and communication
+                  between team members, and providing real-time data insights to help you make informed business
+                  decisions. It can also
+                  reduce costs associated with on-premise software solutions.
+                </li>
+              </ul>
+            </li>
+            <li class="faq-item">
+              <a href="" class="link-getClixr2" aria-label="get clixr">
+                Can our SaaS product
+                integrate with other software systems?
+                <p class="border">
+                  <span class="circle">
+                    <span class="plusBtn">
+                      <span class="bar positionVertical"></span>
+                      <span class="bar positionHorizon"></span>
+                    </span>
+                  </span>
+                </p>
+              </a>
+              <ul class="sub-list">
+                <li class="sub-item">
+                  Our SaaS product can benefit your business by automating time-consuming tasks, improving
+                  collaboration and communication
+                  between team members, and providing real-time data insights to help you make informed business
+                  decisions. It can also
+                  reduce costs associated with on-premise software solutions.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-need">
+        <div class="inner">
+          <div class="left">
+            <h2 class="headline">
+              Everything
+              <span><em>you</em> need</span>
+            </h2>
+
+            <form action="" method="post" class="form">
+              <fieldset class="fieldset">
+                <legend class="blind">메일 전송</legend>
+                <label for="mail" class="blind">Email Address</label>
+                <input type="email" class="email-input" maxlength=256 name="email" placeholder="Enter your email"
+                  id="mail" required>
+                <input type="submit" value="Send" class="submit">
+              </fieldset>
+            </form>
+          </div>
+
+          <div class="right">
+            <picture>
+              <source media="(max-width: 479px)" srcset="./assets/images/newsletter1-500.jpg">
+              <source media="(max-width: 767px)" srcset="./assets/images/newsletter1-800.jpg">
+              <source media="(max-width: 991px)" srcset="./assets/images/newsletter1-1080.jpg">
+              <img src="./assets/images/newsletter1.jpg" alt="">
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <h2 class="blind">
+        clixr 푸터
+      </h2>
+      <div class="footer-inner">
+        <div class="inner">
+          <div class="left">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a href="javascript:void(0);">Socials</a>
+                <ul class="sub-list">
+                  <li class="sub-item">
+                    <a href="">Twitter</a>
+                  </li>
+                  <li class="sub-item">
+                    <a href="">Facebook</a>
+                  </li>
+                  <li class="sub-item">
+                    <a href="">Instagram</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="javascript:void(0);">Contact</a>
+                <ul class="sub-list">
+                  <li class="sub-item">
+                    <a href="">Address</a>
+                  </li>
+                  <li class="sub-item">
+                    <a href="">Email</a>
+                  </li>
+                  <li class="sub-item">
+                    <a href="">+xxxxxxxxx</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="javascript:void(0);">Links</a>
+                <ul class="sub-list">
+                  <li class="sub-item">
+                    <a href="">License</a>
+                  </li>
+                  <li class="sub-item">
+                    <a href="">Youtube</a>
+                  </li>
+                  <li class="sub-item">
+                    <a href="">TrustPilot</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="center">
+            <a href="" class="link-getClixr2" aria-label="get clixr">
+              <p class="border">
+                <span class="circle">
+                  Get Clixr
+                </span>
+              </p>
+            </a>
+          </div>
+          <div class="right">
+            <small class="copy">
+              <a href="">
+                Design & Development by
+                <span class="underPoint-green">Deveb</span>
+              </a>
+              <span>
+                Powered by Webflow
+              </span>
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="" class="link-getClixr1 footer-link">
+      Get Clixr
+    </a>
+  </div>
+</body>
+
+</html>
