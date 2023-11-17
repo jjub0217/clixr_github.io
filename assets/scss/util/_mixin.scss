@@ -11,14 +11,6 @@ $mobile: 767px;
 $smallestMobile: 479px;
 
 
-// @mixin max {
-//   // 1440 이상를 꾸미는거다. 
-//   @media screen and (min-width: $max ) {
-//     @content;
-//   }
-// }
-
-
 @mixin tablet {
 
   // 991 이하를 꾸미는거다. 

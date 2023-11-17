@@ -9,6 +9,10 @@ body {
   @include tablet {
     margin-top: 14vw;
   }
+
+  @include smallestMobile {
+    margin-top: 28vw;
+  }
 }
 
 .marquee-area {
@@ -37,6 +41,10 @@ body {
         @include mobile {
           font-size: 2.5vw;
         }
+
+        @include smallestMobile {
+          font-size: 5vw;
+        }
       }
 
       span {
@@ -44,6 +52,10 @@ body {
 
         @include tablet {
           font-size: 8.5vw;
+        }
+
+        @include smallestMobile {
+          font-size: 12vw;
         }
 
         &::after {
@@ -107,6 +119,13 @@ body {
       font-size: 2.5vw;
     }
 
+    @include smallestMobile {
+      width: 24vw;
+      height: 24vw;
+      font-size: 3.5vw;
+      padding: 0.7vw;
+    }
+
     .circle {
       display: block;
       background-image: linear-gradient(225deg, #7373ff 10%, #000 68%);
@@ -165,6 +184,10 @@ body {
   padding-bottom: 14vw;
   border-radius: 0 0 8vw 8vw;
 
+  @include smallestMobile {
+    padding-bottom: 23vw;
+  }
+
   // padding-top: 144px;
 
   .slide-text {
@@ -182,6 +205,11 @@ body {
       @include mobile {
         font-size: 2.7vw;
       }
+
+      @include smallestMobile {
+        font-size: 4.5vw;
+        margin-bottom: 2vw;
+      }
     }
 
     .text2 {
@@ -197,6 +225,11 @@ body {
         font-size: 9.3vw;
         margin-bottom: 2vw;
       }
+
+      @include smallestMobile {
+        font-size: 12vw;
+        margin-bottom: 3vw;
+      }
     }
 
     .swiper {
@@ -207,11 +240,14 @@ body {
         max-height: 8vw;
       }
 
+      @include smallestMobile {
+        max-height: 10vw;
+        // border: 1px solid;
+      }
+
       .swiper-wrapper {
         display: flex;
         align-items: center;
-
-
 
         .swiper-slide {
           text-align: center;
@@ -222,6 +258,11 @@ body {
           @include mobile {
             font-size: 9.3vw;
             line-height: 2.6;
+          }
+
+          @include smallestMobile {
+            font-size: 11.6vw;
+            // line-height: 6;
           }
 
           .emoji {
@@ -241,6 +282,10 @@ body {
   .marquee-area {
     padding: 3.3vw 0px;
 
+    @include smallestMobile {
+      padding: 6.3vw 0px;
+    }
+
     .marquee {
       .logo-list {
         animation: marquee 25s linear infinite;
@@ -253,12 +298,20 @@ body {
     flex-direction: column;
     gap: 1.5vw;
 
+    @include smallestMobile {
+      padding-top: 3vw;
+      gap: 5vw;
+    }
+
     .top-panel,
     .bottom-panel {
       display: flex;
       gap: 2.5vw;
-      // width: 200%;
-      // height: 533px;
+
+
+      @include smallestMobile {
+        gap: 5vw;
+      }
 
       .panel,
       .reverse-panel {
@@ -268,6 +321,11 @@ body {
         @include mobile {
           width: 25vw;
           height: 25vw;
+        }
+
+        @include smallestMobile {
+          width: 40vw;
+          height: 40vw;
         }
       }
 
@@ -309,7 +367,6 @@ body {
   padding-top: 1vw;
   background: #fff;
 
-
   .marquee-area {
     padding-bottom: 1.3vw;
 
@@ -347,6 +404,12 @@ body {
         gap: 29vw
       }
 
+      @include smallestMobile {
+        flex-direction: column;
+        gap: 5vw;
+        padding-top: 17vw;
+      }
+
       .headline {
         font-size: 2.7vw;
         font-weight: 500;
@@ -354,6 +417,10 @@ body {
 
         @include tablet {
           font-size: 3vw;
+        }
+
+        @include smallestMobile {
+          font-size: 6vw;
         }
       }
 
@@ -369,6 +436,10 @@ body {
 
         @include mobile {
           font-size: 3.7vw;
+        }
+
+        @include smallestMobile {
+          font-size: 6.3vw;
         }
       }
 
@@ -410,6 +481,19 @@ body {
         justify-content: center;
       }
 
+      .bottom {
+        .image {
+          top: -44vw;
+
+          @include smallestMobile {
+            top: -80vw
+          }
+        }
+      }
+    }
+
+    @include smallestMobile {
+      padding: 28vw 0;
     }
   }
 
@@ -420,12 +504,21 @@ body {
     .image {
       border-radius: 4vw;
       overflow: hidden;
-      width: 33vw;
+      width: 27.6vw;
       height: 81vh;
       max-height: 49vw;
       position: absolute;
       top: 0;
 
+      @include mobile {
+        width: 33vw;
+      }
+
+      @include smallestMobile {
+        width: 52.5vw;
+        max-height: 77vw;
+        border-radius: 10vw;
+      }
 
       picture {
         height: 100%;
@@ -448,10 +541,18 @@ body {
     gap: 1vw;
     padding-top: 2vw;
     position: relative;
-    width: 45%;
-    margin-top: 40vw;
-    // margin-bottom: 10vw;
-    background: #000;
+    width: 30%;
+
+    @include mobile {
+      margin: 45vw 0;
+      padding-top: 0;
+    }
+
+    @include smallestMobile {
+      margin: 83vw 0;
+      width: 50%;
+    }
+
 
     .headline {
       font-size: 5vw;
@@ -465,6 +566,12 @@ body {
 
       @include mobile {
         font-size: 6.5vw;
+      }
+
+      @include smallestMobile {
+        font-size: 12vw;
+        line-height: 1.6;
+        padding-bottom: 3vw;
       }
     }
 
@@ -483,13 +590,20 @@ body {
       @include mobile {
         font-size: 3vw;
       }
+
+      @include smallestMobile {
+        width: 47vw;
+        height: 47vw;
+        padding: 1.3vw;
+        font-size: 7vw;
+      }
     }
   }
 }
 
 .section-product {
   background: #000;
-  padding-top: 60vw;
+  // padding-top: 60vw;
 
   .inner {
     @include tablet {
@@ -511,6 +625,10 @@ body {
         height: 50vh;
       }
 
+      @include smallestMobile {
+        height: 40vh;
+      }
+
       .image {
         position: absolute;
         top: 55%;
@@ -524,6 +642,11 @@ body {
         @include mobile {
           width: 33.8vw;
           height: 33.8vw;
+        }
+
+        @include smallestMobile {
+          width: 45vw;
+          height: 45vw;
         }
 
         picture {
@@ -543,7 +666,7 @@ body {
       margin-top: 6vw;
 
       @include mobile {
-        margin-top: 20vw;
+        margin: 0;
       }
 
       .headline {
@@ -560,6 +683,10 @@ body {
         @include mobile {
           font-size: 9.5vw;
           max-width: none;
+        }
+
+        @include smallestMobile {
+          line-height: 1.4;
         }
 
         span {
@@ -583,6 +710,10 @@ body {
           height: 8vw;
           font-size: 2vw;
         }
+
+        @include smallestMobile {
+          display: none;
+        }
       }
     }
 
@@ -604,6 +735,10 @@ body {
     padding-bottom: 10vw;
   }
 
+  @include smallestMobile {
+    padding: 35vw 0;
+  }
+
   .top {
     display: flex;
     justify-content: space-between;
@@ -618,7 +753,9 @@ body {
       border-radius: 3vw;
       overflow: hidden;
 
-
+      @include smallestMobile {
+        border-radius: 7vw;
+      }
 
       picture {
         height: 100%;
@@ -639,6 +776,12 @@ body {
         width: 25.1vw;
         height: 25.1vw;
       }
+
+      @include smallestMobile {
+        width: 40vw;
+        height: 40vw;
+      }
+
     }
 
     .right {
@@ -648,6 +791,11 @@ body {
         position: relative;
         width: 26.2vw;
         height: 26.2vw;
+      }
+
+      @include smallestMobile {
+        width: 40vw;
+        height: 40vw;
       }
     }
   }
@@ -669,6 +817,11 @@ body {
       flex-direction: column;
       justify-content: center;
 
+      @include smallestMobile {
+        width: 70%;
+        height: 75vw;
+      }
+
       .headline {
         font-size: 4.2vw;
         font-weight: 500;
@@ -681,6 +834,10 @@ body {
 
         @include mobile {
           font-size: 7vw;
+        }
+
+        @include smallestMobile {
+          font-size: 13vw;
         }
 
         span {
@@ -705,12 +862,20 @@ body {
           @include mobile {
             font-size: 2.5vw;
           }
+
+          @include smallestMobile {
+            font-size: 5.5vw;
+          }
         }
       }
 
 
       .link-getClixr2 {
         gap: 1.3vw;
+
+        @include smallestMobile {
+          gap: 2vw;
+        }
 
         .border {
           background-image: linear-gradient(296deg, #73ffa2 34%, #000 83%);
@@ -722,6 +887,11 @@ body {
           @include tablet {
             width: 4.45vw;
             height: 4.45vw;
+          }
+
+          @include smallestMobile {
+            width: 9vw;
+            height: 9vw;
           }
 
           .circle {
@@ -736,6 +906,10 @@ body {
 
               @include tablet {
                 width: 1.8vw;
+              }
+
+              @include smallestMobile {
+                width: 3.5vw;
               }
             }
           }
@@ -766,6 +940,12 @@ body {
         height: 33vw;
       }
 
+      @include smallestMobile {
+        width: 55vw;
+        height: 55vw;
+        border-radius: 7vw;
+      }
+
       picture {
         height: 100%;
       }
@@ -784,27 +964,17 @@ body {
   color: #fff;
 
   position: relative;
-  // height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  // height: 40vh;
 
   .text-box {
-    // position: absolute;
-    // top: 0%;
-    // left: 50%;
-    // transform: translateX(-50%);
     color: #fff;
     line-height: 1.15;
     z-index: 3;
     flex: 1;
-    // background: yellow;
     margin-bottom: 2vw;
 
-    @include tablet {
-      // margin-bottom: 10vw;
-    }
 
     .headline {
       text-align: center;
@@ -816,6 +986,11 @@ body {
 
       @include tablet {
         font-size: 8.7vw;
+      }
+
+      @include smallestMobile {
+        font-size: 11.7vw;
+        line-height: 1.5;
       }
 
       span {
@@ -832,12 +1007,21 @@ body {
     margin-top: 1.3vw;
     line-height: 2.1;
 
+
+    @include smallestMobile {
+      gap: 1vw;
+    }
+
     .underPoint-green {
       font-size: 1.6vw;
       font-weight: 500;
 
       @include mobile {
         font-size: 3vw;
+      }
+
+      @include smallestMobile {
+        font-size: 5.5vw;
       }
     }
 
@@ -847,6 +1031,10 @@ body {
 
       @include mobile {
         width: 3vw;
+      }
+
+      @include smallestMobile {
+        width: 5vw;
       }
     }
 
@@ -876,6 +1064,12 @@ body {
         height: 35vw;
       }
 
+      @include smallestMobile {
+        width: 60vw;
+        height: 60vw;
+        border-radius: 7vw;
+      }
+
       picture {
         height: 100%;
       }
@@ -901,6 +1095,12 @@ body {
         @include tablet {
           width: 27.9vw;
           height: 29.2vw;
+        }
+
+        @include smallestMobile {
+          width: 40vw;
+          height: 50vw;
+          border-radius: 7vw;
         }
       }
     }
@@ -941,6 +1141,10 @@ body {
       font-size: 5.5vw;
     }
 
+    @include smallestMobile {
+      font-size: 11vw;
+    }
+
     span {
       color: #fff;
     }
@@ -950,6 +1154,10 @@ body {
   .panels {
     padding-top: 2.5vw;
     transform: rotate(345deg);
+
+    @include smallestMobile {
+      padding-top: 16vw;
+    }
 
     .panels-list {
       display: flex;
@@ -962,6 +1170,11 @@ body {
         @include tablet {
           width: 29vw;
           height: 36.95vw;
+        }
+
+        @include smallestMobile {
+          width: 40vw;
+          height: 58vw;
         }
 
         .image-box {
@@ -1097,11 +1310,11 @@ body {
 
 .section-happy {
   padding-top: 16vw;
-  padding-bottom: 30vw;
+  padding-bottom: 20vw;
   background: #000;
 
   @include tablet {
-    padding-bottom: 20vw;
+    padding: 10vw 0;
   }
 
   .inner {
@@ -1295,6 +1508,10 @@ body {
     }
 
     @include mobile {
+      gap: 10vw;
+    }
+
+    @include mobile {
       flex-direction: column;
       align-items: center;
     }
@@ -1311,12 +1528,13 @@ body {
     position: relative;
 
     @include mobile {
-      padding-top: 45vw;
+      width: 58.8vw;
+      height: 77.2vw;
     }
 
 
     .video {
-      border-radius: 3vw;
+      border-radius: 4vw;
       overflow: hidden;
       position: absolute;
 
@@ -1326,52 +1544,26 @@ body {
         object-fit: cover;
       }
 
+      .bg {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0))
+      }
+
       &.video1 {
-        width: 25.3vw;
-        height: 33.3vw;
-        transform: translateY(-25%);
-
-        @include mobile {
-          width: 50.3vw;
-          height: 30vw;
-          transform: translateY(-55%);
-        }
-
-      }
-
-      &.video2 {
-        // opacity: 0.4;
-        width: 27.5vw;
-        height: 36vw;
-        transform: translateY(-17%);
-
-        @include mobile {
-          width: 52.5vw;
-          height: 70vw;
-        }
-      }
-
-      &.video3 {
-        // opacity: 0.4;
-        width: 30vw;
-        height: 39.3vw;
-        transform: translateY(-10%);
-
-        @include mobile {
-          width: 55.8vw;
-          height: 73.2vw;
-        }
-      }
-
-      &.video4 {
         width: 33vw;
         height: 43.3vw;
         position: relative;
-        transform: translateY(0%);
+        transform: translateY(21%);
 
         @include mobile {
           width: 58.8vw;
           height: 77.2vw;
+          transform: translateY(25%);
         }
 
         .video-pause {
@@ -1390,6 +1582,43 @@ body {
 
       }
 
+      &.video2 {
+        width: 30vw;
+        height: 39.3vw;
+        transform: translateY(9%);
+
+        @include mobile {
+          transform: translateY(13%);
+          width: 52.8vw;
+          height: 73.2vw;
+        }
+      }
+
+      &.video3 {
+        width: 27.5vw;
+        height: 36vw;
+        transform: translateY(-3%);
+
+        @include mobile {
+          transform: translateY(1%);
+          width: 46.8vw;
+          height: 70vw;
+        }
+      }
+
+      &.video4 {
+        width: 25.3vw;
+        height: 33.3vw;
+        transform: translateY(-15%);
+
+        @include mobile {
+          transform: translateY(-7%);
+          width: 40.8vw;
+          height: 67vw;
+        }
+
+      }
+
     }
 
   }
@@ -1400,6 +1629,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
 
     &.left {
       @include tablet {
@@ -1412,7 +1642,11 @@ body {
       }
     }
 
-
+    &.right {
+      @include mobile {
+        padding-top: 20px;
+      }
+    }
 
     .headline {
       display: flex;
@@ -2395,23 +2629,4 @@ body {
       }
     }
   }
-}
-
-.footer-link {
-  display: none;
-
-  @include mobile {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    bottom: 5vw;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
-    width: 31.1vw;
-    height: 14.2vw;
-    font-size: 4vw;
-    border: 0.3vw solid #73ffa2;
-  }
-
 }

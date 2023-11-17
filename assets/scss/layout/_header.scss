@@ -11,6 +11,10 @@
   background-image: linear-gradient(#000, rgba(0, 0, 0, .56) 48%, rgba(0, 0, 0, .23) 74%, rgba(0, 0, 0, .1) 85%, rgba(0, 0, 0, 0));
   padding: 1.3vw 0;
 
+  @include smallestMobile {
+    padding: 4vw 0;
+  }
+
   .inner {
     display: flex;
     align-items: center;
@@ -36,6 +40,10 @@
 
       @include mobile {
         width: 11vw;
+      }
+
+      @include smallestMobile {
+        width: 12.5vw;
       }
     }
   }
@@ -135,6 +143,11 @@
         height: 4vw;
       }
 
+      @include smallestMobile {
+        width: 6.8vw;
+        height: 6.8vw;
+      }
+
       .cart-quantity {
         width: 1.2vw;
         height: 1.2vw;
@@ -161,6 +174,14 @@
           height: 2.3vw;
           margin-left: -1.3vw;
           margin-bottom: -0.5vw;
+        }
+
+        @include smallestMobile {
+          width: 4.5vw;
+          height: 4.5vw;
+          margin-left: -2.4vw;
+          margin-bottom: -1vw;
+          font-size: 3vw;
         }
       }
 
@@ -189,10 +210,10 @@
         width: 2.985vw;
         height: 1.7vw;
         cursor: pointer;
+      }
 
-        @include mobile {
-          align-self: auto;
-        }
+      @include mobile {
+        align-self: auto;
       }
 
       .bar {

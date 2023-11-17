@@ -10,8 +10,6 @@
     padding: 0 0.2vw 0.2vw 0.2vw;
     background-image: linear-gradient(27deg, #738aff, #000);
     border-radius: 4vw;
-
-
   }
 
   .inner {
@@ -192,7 +190,32 @@
 
 }
 
+.link-getClixr1.footer-link {
+  display: none;
 
+  @include mobile {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 5vw;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    width: 31.1vw;
+    height: 14.2vw;
+    font-size: 4vw;
+    border: 0.3vw solid #73ffa2;
+  }
+
+  @include smallestMobile {
+    width: 34vw;
+    height: 19vw;
+    font-size: 5vw;
+    bottom: 8vw;
+    border-width: 0.8vw;
+  }
+
+}
 
 
 

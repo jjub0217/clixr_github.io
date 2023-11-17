@@ -56,8 +56,8 @@ $(function () {
     },
     })
   .addLabel('a')
-  .fromTo($('.section-shaping .mo-inner .top .image1'), {rotation:-40, xPercent: -170},  {rotation:20, xPercent: 20},'a')
-  .fromTo($('.section-shaping .mo-inner .top .image2'), {rotation:-40, xPercent: -140,  yPercent:-2},{rotation:-15, xPercent: -27, },'a')
+  .fromTo($('.section-shaping .mo-inner .top .image1'), {rotation:-40, xPercent: -170},  {rotation:20, xPercent: 15},'a')
+  .fromTo($('.section-shaping .mo-inner .top .image2'), {rotation:-40, xPercent: -140,  yPercent:-2},{rotation:-15, xPercent: -21, },'a')
 
   gsap.timeline({
     scrollTrigger:{
@@ -77,7 +77,7 @@ $(function () {
   gsap.timeline({
   scrollTrigger:{
   trigger:$(".section-product"), 
-  start:"40% center",
+  start:"0% 0",
   end:"30% top",
   markers:false,
   pin: $(window).width() > 767 ? true : false,
@@ -102,48 +102,101 @@ $(function () {
   {rotation:-50, xPercent: -60, yPercent:-33, zPercent: 0},'a')
 
 
-  gsap.timeline({
-  scrollTrigger:{
-  trigger:$(".section-potential"), 
-  start:"0% center",
-  end:"100% 0",
-  markers:false,
-  scrub:1,
-  duration: 5
-  },
-  })
-  .addLabel('a')
-  .fromTo($('.section-potential .left'), 
-  {rotationZ:-30, xPercent: 40, yPercent:15, z: 0},  
-  {rotationZ:-8, yPercent:50, z:0},'a')
-  .fromTo($('.section-potential .right'),
-  {rotationZ:20, xPercent: -40, yPercent:10, z: 0},
-  {rotationZ:26,yPercent:80, z:0},'a')
-  .fromTo($('.section-potential .bottom .image-box'),
-  {rotationZ:-15, xPercent: 0, yPercent:0, z: 0},
-  {rotationZ:-1,yPercent:-40, z:0},'a')
+  ScrollTrigger.matchMedia({
+    "(min-width: 480px)": function() {
+      gsap.timeline({
+        scrollTrigger:{
+        trigger:$(".section-potential"), 
+        start:"0% center",
+        end:"100% 0",
+        markers:false,
+        scrub:1,
+        duration: 5
+        },
+      })
+      .addLabel('a')
+      .fromTo($('.section-potential .left'), 
+      {rotationZ:-30, xPercent: 40, yPercent:15, z: 0},  
+      {rotationZ:-8, yPercent:50, z:0},'a')
+      .fromTo($('.section-potential .right'),
+      {rotationZ:20, xPercent: -40, yPercent:10, z: 0},
+      {rotationZ:26,yPercent:80, z:0},'a')
+      .fromTo($('.section-potential .bottom .image-box'),
+      {rotationZ:-15, xPercent: 0, yPercent:0, z: 0},
+      {rotationZ:-1,yPercent:-40, z:0},'a')
+    },
+    "(max-width: 479px)": function() {
+      gsap.timeline({
+        scrollTrigger:{
+        trigger:$(".section-potential"), 
+        start:"0% center",
+        end:"100% 0",
+        markers:false,
+        scrub:1,
+        duration: 5
+        },
+      })
+      .addLabel('a')
+      .fromTo($('.section-potential .left'), 
+      {rotationZ:-30, xPercent: -20, yPercent:15, z: 0},  
+      {rotationZ:-8, yPercent:50, z:0},'a')
+      .fromTo($('.section-potential .right'),
+      {rotationZ:20, xPercent: 20, yPercent:10, z: 0},
+      {rotationZ:26,yPercent:80, z:0},'a')
+      .fromTo($('.section-potential .bottom .image-box'),
+      {rotationZ:-15, xPercent: 0, yPercent:0, z: 0},
+      {rotationZ:-1,yPercent:-30, z:0},'a')
+    },
+    })
 
 
-  gsap.timeline({
-  scrollTrigger:{
-  trigger:$(".section-all .images-box"), 
-  start:"top 30%",
-  // "트리거 영역의 끝점, 트리거 끝나는 기준"
-  end: "bottom 30%",
-  markers:false,
-  pin: $(window).width() > 767 ? true : false,
-  scrub:1,
-  },
+
+  ScrollTrigger.matchMedia({
+    "(min-width: 480px)": function() {
+      gsap.timeline({
+        scrollTrigger:{
+          trigger:$(".section-all .images-box"), 
+          start:"top 30%",
+          // "트리거 영역의 끝점, 트리거 끝나는 기준"
+          end: "bottom 30%",
+          markers:false,
+          pin: $(window).width() > 767 ? true : false,
+          scrub:1,
+        },
+      })
+      .addLabel('a')
+      .fromTo($('.section-all .images-box .left'), 
+      { xPercent: 0, yPercent:11, z: 0},  
+      { xPercent: -40, z:0},
+      'a')
+      .fromTo($('.section-all .images-box .right'),
+      {xPercent:0, yPercent:11, z: 0},
+      {xPercent:40, z:0},
+      'a')
+    },
+    "(max-width: 479px)": function() {
+      gsap.timeline({
+        scrollTrigger:{
+          trigger:$(".section-all .images-box"), 
+          start:"top 30%",
+          // "트리거 영역의 끝점, 트리거 끝나는 기준"
+          end: "bottom 30%",
+          markers:false,
+          pin: $(window).width() > 767 ? true : false,
+          scrub:1,
+        },
+      })
+      .addLabel('a')
+      .fromTo($('.section-all .images-box .left'), 
+      { xPercent: 0, yPercent:11, z: 0},  
+      { xPercent: -20, z:0},
+      'a')
+      .fromTo($('.section-all .images-box .right'),
+      {xPercent:0, yPercent:11, z: 0},
+      {xPercent:20, z:0},
+      'a')
+    },
   })
-  .addLabel('a')
-  .fromTo($('.section-all .images-box .left'), 
-  { xPercent: 0, yPercent:11, z: 0},  
-  { xPercent: -40, z:0},
-  'a')
-  .fromTo($('.section-all .images-box .right'),
-  {xPercent:0, yPercent:11, z: 0},
-  {xPercent:40, z:0},
-  'a')
 
   gsap.timeline({
   scrollTrigger:{
@@ -208,32 +261,78 @@ $(function () {
   'a'
   )
 
-  gsap.timeline({
-  scrollTrigger:{
-  trigger:$(".section-works .video-box"), 
-  start:"0% 100%",
-  end:"90% 0%",
-  markers:false,
-  scrub:1,
-  },
-  })
-  .addLabel('a')
-  .to($('.section-works .video-box .video1'), 
-  { y: "-16.5%"},  
-  'a'
-  )
-  .to($('.section-works .video-box .video2'), 
-  { y: "-5%"},  
-  'a'
-  )
-  .to($('.section-works .video-box .video3'), 
-  { y: "9%"},  
-  'a'
-  )
-  .to($('.section-works .video-box .video4'), 
-  { y: "22%"},  
-    'a'
-  )
+  ScrollTrigger.matchMedia({
+    "(min-width: 768px)": function() {
+      gsap.timeline({
+        scrollTrigger:{
+          trigger:$(".section-works"), 
+          start:"-30% 100%",
+          end:"0% 0%",
+          markers:true,
+          scrub:1,
+        },
+      })
+      .addLabel('a')
+      .to($('.section-works .video-box .video1'), 
+      { y: "4%"},'a')
+      .to($('.section-works .video-box .video2'), 
+      { y: "-4%"},'a')
+      .to($('.section-works .video-box .video3'), 
+      { y: "-12%"},  
+      'a')
+      .to($('.section-works .video-box .video4'), 
+      { y: "-20%"},'a')
+    },
+    "(max-width: 767px)": function() {
+      gsap.timeline({
+        scrollTrigger:{
+          trigger:$(".section-works .video-box"), 
+          start:"0% 100%",
+          end:"0% 0%",
+          markers:false,
+          scrub:1,
+        },
+      })
+      .addLabel('a')
+      .to($('.section-works .video-box .video1'), 
+      { y: "10%"},'a')
+      .to($('.section-works .video-box .video2'), 
+      { y: "5%"},'a')
+      .to($('.section-works .video-box .video3'), 
+      { y: "0%"},  
+      'a')
+      .to($('.section-works .video-box .video4'), 
+      { y: "-6%"},'a')
+    },
+    })
+
+
+  // gsap.timeline({
+  // scrollTrigger:{
+  // trigger:$(".section-works .video-box"), 
+  // start:"0% 100%",
+  // end:"0% 0%",
+  // markers:true,
+  // scrub:1,
+  // },
+  // })
+  // .addLabel('a')
+  // .to($('.section-works .video-box .video1'), 
+  // { y: "10%"},  
+  // 'a'
+  // )
+  // .to($('.section-works .video-box .video2'), 
+  // { y: "5%"},  
+  // 'a'
+  // )
+  // .to($('.section-works .video-box .video3'), 
+  // { y: "0%"},  
+  // 'a'
+  // )
+  // .to($('.section-works .video-box .video4'), 
+  // { y: "-6%"},  
+  //   'a'
+  // )
 
   $(".section-works .video4 .video-pause").click(function(e){
     e.preventDefault()
