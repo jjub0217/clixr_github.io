@@ -1564,6 +1564,9 @@ body {
   position: relative;
   border-radius: 0 0 8vw 8vw;
 
+  @include smallestMobile {
+    padding-bottom: 45vw;
+  }
 
 
   .inner {
@@ -1607,6 +1610,10 @@ body {
       @include mobile {
         padding-top: 20px;
       }
+
+      @include smallestMobile {
+        padding-top: 45vw;
+      }
     }
 
     .headline {
@@ -1646,6 +1653,10 @@ body {
         font-size: 3vw;
       }
 
+      @include smallestMobile {
+        font-size: 7vw;
+      }
+
       span {
         color: #fff;
       }
@@ -1653,8 +1664,15 @@ body {
 
     .link-getClixr1 {
       width: 13.6vw;
-      font-size: 1.7vw;
       height: 6.3vw;
+      font-size: 1.7vw;
+
+      @include smallestMobile {
+        width: 29vw;
+        height: 14vw;
+        font-size: 3.5vw;
+        border-width: 0.4vw;
+      }
     }
 
   }
@@ -1685,7 +1703,7 @@ body {
 
 
       @include smallestMobile {
-        border-radius: 7vw;
+        border-radius: 6vw;
       }
 
       video {
@@ -1719,6 +1737,7 @@ body {
         @include smallestMobile {
           width: 90vw;
           height: 100vw;
+          transform: translateY(11%);
         }
 
         .video-pause {
@@ -1749,8 +1768,9 @@ body {
         }
 
         @include smallestMobile {
-          width: 90vw;
+          width: 80vw;
           height: 100vw;
+          transform: translateY(2%);
         }
       }
 
@@ -1766,8 +1786,9 @@ body {
         }
 
         @include smallestMobile {
-          width: 90vw;
+          width: 70vw;
           height: 100vw;
+          transform: translateY(-5%);
         }
       }
 
@@ -1783,8 +1804,8 @@ body {
         }
 
         @include smallestMobile {
-          transform: translateY(-50%);
-          width: 70vw;
+          transform: translateY(-55%);
+          width: 65vw;
           height: 57vw;
         }
       }
@@ -1821,7 +1842,6 @@ body {
       display: flex;
       justify-content: space-between;
       background: #000;
-      // border-radius: 10% 10% 0 0;
       border-radius: 8vw 8vw 0 0;
       gap: 9.5vw;
       color: #fff;
@@ -1834,8 +1854,12 @@ body {
         flex-direction: column;
         padding: 20vw 12vw 5vw;
         gap: 8vw;
-        // padding-top: 20vw;
-        //   padding-bottom: 5vw;
+      }
+
+      @include smallestMobile {
+        padding-left: 5vw;
+        padding-right: 5vw;
+
       }
 
       .left {
@@ -1864,6 +1888,10 @@ body {
 
           @include mobile {
             font-size: 7vw;
+          }
+
+          @include smallestMobile {
+            font-size: 11vw;
           }
         }
 

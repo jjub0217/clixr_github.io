@@ -262,48 +262,48 @@ $(function () {
   )
 
   ScrollTrigger.matchMedia({
-    "(min-width: 768px)": function() {
-      gsap.timeline({
-        scrollTrigger:{
-          trigger:$(".section-works"), 
-          start:"-30% 100%",
-          end:"0% 0%",
-          markers:false,
-          scrub:1,
-        },
-      })
-      .addLabel('a')
-      .to($('.section-works .video-box .video1'), 
-      { y: "4%"},'a')
-      .to($('.section-works .video-box .video2'), 
-      { y: "-4%"},'a')
-      .to($('.section-works .video-box .video3'), 
-      { y: "-12%"},  
-      'a')
-      .to($('.section-works .video-box .video4'), 
-      { y: "-20%"},'a')
-    },
-    "(max-width: 767px)": function() {
-      gsap.timeline({
-        scrollTrigger:{
-          trigger:$(".section-works .video-box"), 
-          start:"0% 100%",
-          end:"0% 0%",
-          markers:false,
-          scrub:1,
-        },
-      })
-      .addLabel('a')
-      .to($('.section-works .video-box .video1'), 
-      { y: "10%"},'a')
-      .to($('.section-works .video-box .video2'), 
-      { y: "5%"},'a')
-      .to($('.section-works .video-box .video3'), 
-      { y: "0%"},  
-      'a')
-      .to($('.section-works .video-box .video4'), 
-      { y: "-6%"},'a')
-    },
+    // "(min-width: 768px)": function() {
+    //   gsap.timeline({
+    //     scrollTrigger:{
+    //       trigger:$(".section-works"), 
+    //       start:"-30% 100%",
+    //       end:"0% 0%",
+    //       markers:false,
+    //       scrub:1,
+    //     },
+    //   })
+    //   .addLabel('a')
+    //   .to($('.section-works .video-box .video1'), 
+    //   { y: "4%"},'a')
+    //   .to($('.section-works .video-box .video2'), 
+    //   { y: "-4%"},'a')
+    //   .to($('.section-works .video-box .video3'), 
+    //   { y: "-12%"},  
+    //   'a')
+    //   .to($('.section-works .video-box .video4'), 
+    //   { y: "-20%"},'a')
+    // },
+    // "(max-width: 767px)": function() {
+    //   gsap.timeline({
+    //     scrollTrigger:{
+    //       trigger:$(".section-works .video-box"), 
+    //       start:"0% 100%",
+    //       end:"0% 0%",
+    //       markers:false,
+    //       scrub:1,
+    //     },
+    //   })
+    //   .addLabel('a')
+    //   .to($('.section-works .video-box .video1'), 
+    //   { y: "10%"},'a')
+    //   .to($('.section-works .video-box .video2'), 
+    //   { y: "5%"},'a')
+    //   .to($('.section-works .video-box .video3'), 
+    //   { y: "0%"},  
+    //   'a')
+    //   .to($('.section-works .video-box .video4'), 
+    //   { y: "-6%"},'a')
+    // },
      "(max-width: 479px)": function() {
       gsap.timeline({
         scrollTrigger:{
@@ -315,15 +315,15 @@ $(function () {
         },
       })
       .addLabel('a')
-      // .to($('.section-works .video-box .video1'), 
-      // { y: "10%"},'a')
-      // .to($('.section-works .video-box .video2'), 
-      // { y: "5%"},'a')
-      // .to($('.section-works .video-box .video3'), 
-      // { y: "0%"},  
-      // 'a')
+      .to($('.section-works .video-box .video1'), 
+      { y: "3%"},'a')
+      .to($('.section-works .video-box .video2'), 
+      { y: "-2%"},'a')
+      .to($('.section-works .video-box .video3'), 
+      { y: "-7%"},
+      'a')
       .to($('.section-works .video-box .video4'), 
-      { y: "-51%"},'a')
+      { y: "-56%"},'a')
     },
     })
 
