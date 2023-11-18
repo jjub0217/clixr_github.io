@@ -213,7 +213,7 @@ $(function () {
   { xPercent: -220, z:0},
   'a')
   .fromTo($('.section-power .inner .desc'),
-  {yPercent:40},
+  {yPercent:50},
   {yPercent:-30},
   'a')
 
@@ -268,7 +268,7 @@ $(function () {
           trigger:$(".section-works"), 
           start:"-30% 100%",
           end:"0% 0%",
-          markers:true,
+          markers:false,
           scrub:1,
         },
       })
@@ -303,6 +303,27 @@ $(function () {
       'a')
       .to($('.section-works .video-box .video4'), 
       { y: "-6%"},'a')
+    },
+     "(max-width: 479px)": function() {
+      gsap.timeline({
+        scrollTrigger:{
+          trigger:$(".section-works .video-box"), 
+          start:"0% 100%",
+          end:"0% 0%",
+          markers:true,
+          scrub:1,
+        },
+      })
+      .addLabel('a')
+      // .to($('.section-works .video-box .video1'), 
+      // { y: "10%"},'a')
+      // .to($('.section-works .video-box .video2'), 
+      // { y: "5%"},'a')
+      // .to($('.section-works .video-box .video3'), 
+      // { y: "0%"},  
+      // 'a')
+      .to($('.section-works .video-box .video4'), 
+      { y: "-51%"},'a')
     },
     })
 

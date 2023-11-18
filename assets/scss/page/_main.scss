@@ -120,8 +120,8 @@ body {
     }
 
     @include smallestMobile {
-      width: 24vw;
-      height: 24vw;
+      width: 25vw;
+      height: 25vw;
       font-size: 3.5vw;
       padding: 0.7vw;
     }
@@ -493,7 +493,7 @@ body {
     }
 
     @include smallestMobile {
-      padding: 28vw 0;
+      padding: 40vw 0;
     }
   }
 
@@ -667,6 +667,10 @@ body {
 
       @include mobile {
         margin: 0;
+      }
+
+      @include smallestMobile {
+        padding-top: 30vw;
       }
 
       .headline {
@@ -1122,6 +1126,10 @@ body {
     padding-top: 50vh;
   }
 
+  @include smallestMobile {
+    padding-top: 90vh;
+  }
+
   .inner {
     @include tablet {
       padding: 0 8vw;
@@ -1156,7 +1164,7 @@ body {
     transform: rotate(345deg);
 
     @include smallestMobile {
-      padding-top: 16vw;
+      padding-top: 18vw;
     }
 
     .panels-list {
@@ -1209,6 +1217,11 @@ body {
       font-size: 5.5vw;
     }
 
+    @include smallestMobile {
+      font-size: 11vw;
+      transform: translateY(70%);
+    }
+
     span {
       color: #fff;
     }
@@ -1218,12 +1231,13 @@ body {
 
 .section-audience {
   background: #000;
-  // padding-top: 13vw;
-  // padding-bottom: 10vw;
 
   @include tablet {
     padding-top: 13vw;
+  }
 
+  @include smallestMobile {
+    padding-top: 40vw;
   }
 
   .image-box {
@@ -1240,6 +1254,11 @@ body {
       @include tablet {
         width: 24.5vw;
         height: 24.5vw;
+      }
+
+      @include smallestMobile {
+        width: 45vw;
+        height: 45vw;
       }
 
       picture {
@@ -1267,6 +1286,11 @@ body {
       @include tablet {
         font-size: 8.5vw;
       }
+
+      @include smallestMobile {
+        font-size: 11.5vw;
+        line-height: 1.5;
+      }
     }
   }
 
@@ -1282,16 +1306,24 @@ body {
       height: 12vw;
     }
 
+    @include smallestMobile {
+      width: 18vw;
+      height: 18vw;
+    }
+
     .circle {
       background-image: linear-gradient(225deg, #73ffa2, rgba(115, 255, 162, 0) 55%);
       background-color: #000;
 
       .long-arrow {
-
         transition: 0.2s;
 
         @include tablet {
           width: 5vw;
+        }
+
+        @include smallestMobile {
+          width: 7vw;
         }
       }
     }
@@ -1315,6 +1347,10 @@ body {
 
   @include tablet {
     padding: 10vw 0;
+  }
+
+  @include smallestMobile {
+    padding: 20vw 0;
   }
 
   .inner {
@@ -1343,6 +1379,11 @@ body {
           width: 100%;
           padding: 3vw 0;
 
+          @include smallestMobile {
+            justify-content: baseline;
+            gap: 8vw;
+          }
+
           .image {
             border-radius: 100%;
             overflow: hidden;
@@ -1351,6 +1392,11 @@ body {
             &.image1 {
               width: 25vw;
               height: 25vw;
+
+              @include smallestMobile {
+                width: 40vw;
+                height: 40vw;
+              }
             }
 
             &.image2 {
@@ -1358,6 +1404,11 @@ body {
               height: 25vw;
               top: auto;
               transform: none;
+
+              @include smallestMobile {
+                width: 40vw;
+                height: 40vw;
+              }
             }
 
             &.image3 {
@@ -1365,24 +1416,37 @@ body {
               height: 25vw;
               bottom: auto;
 
+              @include smallestMobile {
+                width: 40vw;
+                height: 40vw;
+              }
             }
           }
         }
 
         .text-box {
-
-          .underPoint-red {
-            margin-right: 2vw;
-            line-height: 1.5;
-            font-size: 8vw;
-          }
-
           .headline {
             width: 60%;
             position: relative;
             left: 50%;
             transform: translateX(-50%);
             font-size: 8vw;
+
+            @include smallestMobile {
+              font-size: 12vw;
+              width: 100%;
+              padding-top: 20vw;
+            }
+          }
+
+          .underPoint-red {
+            margin-right: 2vw;
+            line-height: 1.5;
+            font-size: 8vw;
+
+            @include smallestMobile {
+              font-size: 11vw;
+            }
           }
 
           .link-more {
@@ -1391,8 +1455,10 @@ body {
             display: block;
             transform: none;
             margin-top: 2vw;
-            // margin-bottom: 2vw;
 
+            @include smallestMobile {
+              padding-bottom: 20vw;
+            }
 
             .underPoint-green {
               color: #fff;
@@ -1400,6 +1466,10 @@ body {
               font-size: 1.6vw;
               font-weight: 500;
               line-height: 3;
+
+              @include smallestMobile {
+                font-size: 5vw;
+              }
             }
           }
         }
@@ -1486,17 +1556,15 @@ body {
 
   }
 
-
-
-
 }
 
 .section-works {
   padding-bottom: 16.5vw;
   background: #000;
   position: relative;
-  // border-radius: 0 0 10% 10%;
   border-radius: 0 0 8vw 8vw;
+
+
 
   .inner {
     display: flex;
@@ -1509,12 +1577,86 @@ body {
 
     @include mobile {
       gap: 10vw;
-    }
-
-    @include mobile {
       flex-direction: column;
       align-items: center;
     }
+
+    @include smallestMobile {
+      padding-top: 25vw;
+    }
+  }
+
+  .text-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    &.left {
+      @include tablet {
+        flex: none;
+      }
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+
+    &.right {
+      @include mobile {
+        padding-top: 20px;
+      }
+    }
+
+    .headline {
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      font-size: 7vw;
+      font-weight: 500;
+      line-height: 1.15;
+
+      @include mobile {
+        display: block;
+        font-size: 9vw;
+      }
+
+      @include smallestMobile {
+        font-size: 12vw;
+      }
+
+      span {
+        color: #8c8c8c;
+      }
+    }
+
+    .desc {
+      color: #8c8c8c;
+      font-size: 1.6vw;
+      font-weight: 500;
+      line-height: 2;
+      padding-bottom: 4vw;
+
+      @include tablet {
+        font-size: 2vw;
+      }
+
+      @include mobile {
+        font-size: 3vw;
+      }
+
+      span {
+        color: #fff;
+      }
+    }
+
+    .link-getClixr1 {
+      width: 13.6vw;
+      font-size: 1.7vw;
+      height: 6.3vw;
+    }
+
   }
 
   .video-box {
@@ -1532,11 +1674,19 @@ body {
       height: 77.2vw;
     }
 
+    @include smallestMobile {
+      padding-top: 70vw;
+    }
 
     .video {
       border-radius: 4vw;
       overflow: hidden;
       position: absolute;
+
+
+      @include smallestMobile {
+        border-radius: 7vw;
+      }
 
       video {
         width: 100%;
@@ -1566,6 +1716,11 @@ body {
           transform: translateY(25%);
         }
 
+        @include smallestMobile {
+          width: 90vw;
+          height: 100vw;
+        }
+
         .video-pause {
           position: absolute;
           bottom: 1.6vw;
@@ -1592,6 +1747,11 @@ body {
           width: 52.8vw;
           height: 73.2vw;
         }
+
+        @include smallestMobile {
+          width: 90vw;
+          height: 100vw;
+        }
       }
 
       &.video3 {
@@ -1604,6 +1764,11 @@ body {
           width: 46.8vw;
           height: 70vw;
         }
+
+        @include smallestMobile {
+          width: 90vw;
+          height: 100vw;
+        }
       }
 
       &.video4 {
@@ -1614,88 +1779,20 @@ body {
         @include mobile {
           transform: translateY(-7%);
           width: 40.8vw;
-          height: 67vw;
+          height: 33.3vw;
         }
 
+        @include smallestMobile {
+          transform: translateY(-50%);
+          width: 70vw;
+          height: 57vw;
+        }
       }
 
     }
 
   }
 
-  .text-box {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-
-    &.left {
-      @include tablet {
-
-        flex: none;
-      }
-
-      @include mobile {
-        width: 100%;
-      }
-    }
-
-    &.right {
-      @include mobile {
-        padding-top: 20px;
-      }
-    }
-
-    .headline {
-      display: flex;
-      flex-direction: column;
-      color: #fff;
-      font-size: 7vw;
-      font-weight: 500;
-      line-height: 1.15;
-
-      @include mobile {
-        display: block;
-        font-size: 9vw;
-      }
-
-      span {
-        color: #8c8c8c;
-      }
-    }
-
-
-
-
-    .desc {
-      color: #8c8c8c;
-      font-size: 1.6vw;
-      font-weight: 500;
-      line-height: 2;
-      padding-bottom: 4vw;
-
-      @include tablet {
-        font-size: 2vw;
-      }
-
-      @include mobile {
-        font-size: 3vw;
-      }
-
-      span {
-        color: #fff;
-      }
-    }
-
-    .link-getClixr1 {
-      width: 13.6vw;
-      font-size: 1.7vw;
-      height: 6.3vw;
-    }
-
-  }
 
 
 }
