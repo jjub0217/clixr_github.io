@@ -1878,7 +1878,6 @@ body {
 
         @include smallestMobile {
           flex-direction: column;
-          // width: 30%
         }
 
         .headline {
@@ -2039,7 +2038,7 @@ body {
         border-radius: 10vw;
         padding: 8vw;
         gap: 6vw;
-        background-image: linear-gradient(221deg, #73ddff, #000 55%);
+
       }
 
 
@@ -2128,7 +2127,7 @@ body {
           width: 100%;
           font-size: 4.7vw;
           padding: 2vw 12vw;
-          border-width: 0.7vw;
+          border-width: 0.6vw;
         }
 
         &:hover {
@@ -2180,6 +2179,12 @@ body {
       background-image: linear-gradient(211deg, #73ddff, rgba(255, 255, 255, 0) 84%);
     }
 
+    &-inner {
+      @include smallestMobile {
+        background-image: linear-gradient(221deg, #73ddff, #000 55%);
+      }
+    }
+
     .gradient-circle {
       background: url("../images/price-circle-skyblue.svg");
       background-size: cover;
@@ -2228,6 +2233,14 @@ body {
       background-image: linear-gradient(207deg, #738aff, rgba(255, 255, 255, 0) 86%);
     }
 
+    &-inner {
+
+      @include smallestMobile {
+        background-image: linear-gradient(230deg, #738aff, #738aff 0%, #738aff 0%, #738aff 0%, #000 45%);
+      }
+    }
+
+
     .gradient-circle {
       background: url("../images/price-circle-blue.svg");
       background-size: cover;
@@ -2240,6 +2253,10 @@ body {
       @include mobile {
         border-width: 0.4vw;
       }
+
+      @include smallestMobile {
+        border-width: 0.6vw;
+      }
     }
   }
 }
@@ -2249,6 +2266,10 @@ body {
   color: #fff;
   padding-top: 5vw;
   padding-bottom: 11vw;
+
+  @include smallestMobile {
+    padding-top: 25vw;
+  }
 
   .inner {
     display: flex;
@@ -2273,6 +2294,12 @@ body {
       font-size: 6vw;
     }
 
+    @include smallestMobile {
+      font-size: 11vw;
+
+      max-width: 80%;
+    }
+
   }
 
   .desc {
@@ -2289,6 +2316,11 @@ body {
     @include mobile {
       font-size: 2vw;
     }
+
+    @include smallestMobile {
+      font-size: 3.7vw;
+
+    }
   }
 
   .top {
@@ -2297,6 +2329,10 @@ body {
     background-image: linear-gradient(306deg, #ff8359, #000 85%);
     border-radius: 4vw;
     padding: 0.2vw;
+
+    @include smallestMobile {
+      border-radius: 10vw;
+    }
 
     .text-box {
       background-color: #000;
@@ -2307,7 +2343,11 @@ body {
       justify-content: space-between;
       align-items: center;
 
-
+      @include smallestMobile {
+        border-radius: 10vw;
+        align-items: flex-start;
+        padding: 5.7vw 8.1vw 5.8vw 4vw;
+      }
 
       .left {
         display: flex;
@@ -2321,6 +2361,18 @@ body {
 
         @include mobile {
           max-width: 80%;
+        }
+
+        @include smallestMobile {
+          width: 100%;
+          max-width: none;
+        }
+      }
+
+      .right {
+        @include smallestMobile {
+          position: absolute;
+          right: 10%;
         }
       }
 
@@ -2342,6 +2394,11 @@ body {
             height: 13vw;
           }
 
+          @include smallestMobile {
+            width: 18vw;
+            height: 18vw;
+          }
+
           .circle {
             background-image: linear-gradient(225deg, #ff8359 14%, #4b261a 53%, #000 89%);
 
@@ -2352,6 +2409,10 @@ body {
 
               @include mobile {
                 width: 5vw;
+              }
+
+              @include smallestMobile {
+                width: 7vw;
               }
             }
           }
@@ -2385,6 +2446,10 @@ body {
       border-radius: 4vw;
       padding: 0.2vw;
 
+      @include smallestMobile {
+        border-radius: 10vw;
+      }
+
 
       .text-box {
         background-color: #000;
@@ -2396,6 +2461,10 @@ body {
 
         @include mobile {
           padding: 4.6vw 25vw 4.6vw 4.6vw;
+        }
+
+        @include smallestMobile {
+          border-radius: 10vw;
         }
 
         .headline-wrap {

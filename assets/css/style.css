@@ -2569,7 +2569,6 @@ body {
     border-radius: 10vw;
     padding: 8vw;
     gap: 6vw;
-    background-image: linear-gradient(221deg, #73ddff, #000 55%);
   }
 }
 .section-price .left-inner .price-area,
@@ -2697,7 +2696,7 @@ body {
     width: 100%;
     font-size: 4.7vw;
     padding: 2vw 12vw;
-    border-width: 0.7vw;
+    border-width: 0.6vw;
   }
 }
 .section-price .left-inner .link-getClixr1:hover,
@@ -2758,6 +2757,11 @@ body {
     background-image: linear-gradient(211deg, #73ddff, rgba(255, 255, 255, 0) 84%);
   }
 }
+@media screen and (max-width: 479px) {
+  .section-price .left-inner {
+    background-image: linear-gradient(221deg, #73ddff, #000 55%);
+  }
+}
 .section-price .left .gradient-circle {
   background: url("../images/price-circle-skyblue.svg");
   background-size: cover;
@@ -2800,6 +2804,11 @@ body {
     background-image: linear-gradient(207deg, #738aff, rgba(255, 255, 255, 0) 86%);
   }
 }
+@media screen and (max-width: 479px) {
+  .section-price .right-inner {
+    background-image: linear-gradient(230deg, #738aff, #738aff 0%, #738aff 0%, #738aff 0%, #000 45%);
+  }
+}
 .section-price .right .gradient-circle {
   background: url("../images/price-circle-blue.svg");
   background-size: cover;
@@ -2813,12 +2822,22 @@ body {
     border-width: 0.4vw;
   }
 }
+@media screen and (max-width: 479px) {
+  .section-price .right .link-getClixr1 {
+    border-width: 0.6vw;
+  }
+}
 
 .section-free {
   background: #000;
   color: #fff;
   padding-top: 5vw;
   padding-bottom: 11vw;
+}
+@media screen and (max-width: 479px) {
+  .section-free {
+    padding-top: 25vw;
+  }
 }
 .section-free .inner {
   display: flex;
@@ -2845,6 +2864,12 @@ body {
     font-size: 6vw;
   }
 }
+@media screen and (max-width: 479px) {
+  .section-free .headline {
+    font-size: 11vw;
+    max-width: 80%;
+  }
+}
 .section-free .desc {
   font-size: 1.13vw;
   line-height: 1.8;
@@ -2862,12 +2887,22 @@ body {
     font-size: 2vw;
   }
 }
+@media screen and (max-width: 479px) {
+  .section-free .desc {
+    font-size: 3.7vw;
+  }
+}
 .section-free .top {
   opacity: 0;
   transform: translateY(100px);
   background-image: linear-gradient(306deg, #ff8359, #000 85%);
   border-radius: 4vw;
   padding: 0.2vw;
+}
+@media screen and (max-width: 479px) {
+  .section-free .top {
+    border-radius: 10vw;
+  }
 }
 .section-free .top .text-box {
   background-color: #000;
@@ -2877,6 +2912,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 479px) {
+  .section-free .top .text-box {
+    border-radius: 10vw;
+    align-items: flex-start;
+    padding: 5.7vw 8.1vw 5.8vw 4vw;
+  }
 }
 .section-free .top .text-box .left {
   display: flex;
@@ -2892,6 +2934,18 @@ body {
 @media screen and (max-width: 767px) {
   .section-free .top .text-box .left {
     max-width: 80%;
+  }
+}
+@media screen and (max-width: 479px) {
+  .section-free .top .text-box .left {
+    width: 100%;
+    max-width: none;
+  }
+}
+@media screen and (max-width: 479px) {
+  .section-free .top .text-box .right {
+    position: absolute;
+    right: 10%;
   }
 }
 .section-free .top .text-box .link-getClixr2 .border {
@@ -2913,6 +2967,12 @@ body {
     height: 13vw;
   }
 }
+@media screen and (max-width: 479px) {
+  .section-free .top .text-box .link-getClixr2 .border {
+    width: 18vw;
+    height: 18vw;
+  }
+}
 .section-free .top .text-box .link-getClixr2 .border .circle {
   background-image: linear-gradient(225deg, #ff8359 14%, #4b261a 53%, #000 89%);
 }
@@ -2924,6 +2984,11 @@ body {
 @media screen and (max-width: 767px) {
   .section-free .top .text-box .link-getClixr2 .border .circle .long-arrow {
     width: 5vw;
+  }
+}
+@media screen and (max-width: 479px) {
+  .section-free .top .text-box .link-getClixr2 .border .circle .long-arrow {
+    width: 7vw;
   }
 }
 .section-free .top .text-box .link-getClixr2 .border:hover {
@@ -2947,6 +3012,12 @@ body {
   border-radius: 4vw;
   padding: 0.2vw;
 }
+@media screen and (max-width: 479px) {
+  .section-free .bottom .left,
+  .section-free .bottom .right {
+    border-radius: 10vw;
+  }
+}
 .section-free .bottom .left .text-box,
 .section-free .bottom .right .text-box {
   background-color: #000;
@@ -2960,6 +3031,12 @@ body {
   .section-free .bottom .left .text-box,
   .section-free .bottom .right .text-box {
     padding: 4.6vw 25vw 4.6vw 4.6vw;
+  }
+}
+@media screen and (max-width: 479px) {
+  .section-free .bottom .left .text-box,
+  .section-free .bottom .right .text-box {
+    border-radius: 10vw;
   }
 }
 .section-free .bottom .left .text-box .headline-wrap,
