@@ -354,6 +354,11 @@ fieldset {
   background: #000;
   color: #fff;
 }
+@media screen and (max-width: 479px) {
+  .footer {
+    padding-top: 35vw;
+  }
+}
 .footer .footer-inner {
   width: 100%;
   padding: 0 0.2vw 0.2vw 0.2vw;
@@ -382,6 +387,11 @@ fieldset {
     gap: 4vw;
   }
 }
+@media screen and (max-width: 479px) {
+  .footer .inner {
+    padding: 29vw 6vw;
+  }
+}
 .footer .left {
   width: 40%;
 }
@@ -390,9 +400,19 @@ fieldset {
     width: auto;
   }
 }
+@media screen and (max-width: 479px) {
+  .footer .left {
+    width: 100%;
+  }
+}
 .footer .left .menu-list {
   display: flex;
   gap: 4.3vw;
+}
+@media screen and (max-width: 479px) {
+  .footer .left .menu-list .menu-item {
+    flex: 1;
+  }
 }
 .footer .left .menu-list .menu-item > a {
   display: inline-block;
@@ -411,6 +431,12 @@ fieldset {
     font-size: 3.2vw;
   }
 }
+@media screen and (max-width: 479px) {
+  .footer .left .menu-list .menu-item > a {
+    font-size: 5vw;
+    margin-bottom: 4vw;
+  }
+}
 .footer .left .menu-list .sub-list {
   color: #b3b3b3;
   font-size: 1.3vw;
@@ -423,6 +449,11 @@ fieldset {
 @media screen and (max-width: 767px) {
   .footer .left .menu-list .sub-list {
     font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 479px) {
+  .footer .left .menu-list .sub-list {
+    font-size: 4vw;
   }
 }
 .footer .left .menu-list .sub-list .sub-item {
@@ -3208,6 +3239,11 @@ body {
   color: #fff;
   padding-bottom: 8.9vw;
 }
+@media screen and (max-width: 479px) {
+  .section-faq {
+    padding-bottom: 35vw;
+  }
+}
 .section-faq .inner {
   display: flex;
   flex-direction: column;
@@ -3226,7 +3262,7 @@ body {
 }
 @media screen and (max-width: 479px) {
   .section-faq .inner {
-    gap: 17vw;
+    gap: 23vw;
   }
 }
 .section-faq .headline {
@@ -3280,7 +3316,7 @@ body {
 @media screen and (max-width: 479px) {
   .section-faq .faq-list .faq-item {
     font-size: 4.7vw;
-    margin-bottom: 14vw;
+    margin-bottom: 11vw;
   }
 }
 .section-faq .faq-list .faq-item .link-getClixr2 {
@@ -3420,6 +3456,11 @@ body {
     gap: 3vw;
   }
 }
+@media screen and (max-width: 479px) {
+  .section-need .inner {
+    gap: 5vw;
+  }
+}
 .section-need .left {
   flex: 1;
   display: flex;
@@ -3431,6 +3472,11 @@ body {
   .section-need .left {
     align-items: center;
     max-width: 60%;
+  }
+}
+@media screen and (max-width: 479px) {
+  .section-need .left {
+    max-width: none;
   }
 }
 .section-need .headline {
@@ -3452,6 +3498,12 @@ body {
     display: block;
   }
 }
+@media screen and (max-width: 479px) {
+  .section-need .headline {
+    font-size: 12vw;
+    line-height: 1.5;
+  }
+}
 .section-need .headline em {
   font-style: normal;
   color: #8c8c8c;
@@ -3468,6 +3520,12 @@ body {
     width: 100%;
   }
 }
+@media screen and (max-width: 479px) {
+  .section-need .form {
+    border-radius: 9vw;
+    padding: 0 0.7vw 0.7vw;
+  }
+}
 .section-need .form .fieldset {
   background-image: linear-gradient(186deg, #73ffa2, #53b775 15%, #3b8353 26%, #265335 36%, #000 54%, #000);
   background-color: #000;
@@ -3477,6 +3535,12 @@ body {
 @media screen and (max-width: 767px) {
   .section-need .form .fieldset {
     padding: 4vw 5vw;
+  }
+}
+@media screen and (max-width: 479px) {
+  .section-need .form .fieldset {
+    padding: 7vw 9vw;
+    border-radius: 9vw;
   }
 }
 .section-need .form .fieldset .email-input {
@@ -3489,6 +3553,11 @@ body {
 @media screen and (max-width: 767px) {
   .section-need .form .fieldset .email-input {
     font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 479px) {
+  .section-need .form .fieldset .email-input {
+    font-size: 4vw;
   }
 }
 .section-need .form .fieldset .email-input::-moz-placeholder {
@@ -3517,6 +3586,14 @@ body {
     font-size: 2vw;
   }
 }
+@media screen and (max-width: 479px) {
+  .section-need .form .fieldset .submit {
+    font-size: 3vw;
+    right: 2vw;
+    padding: 5vw 7vw;
+    border-width: 0.7vw;
+  }
+}
 .section-need .right {
   width: 25vw;
   height: 38vw;
@@ -3534,6 +3611,12 @@ body {
     width: 41.4vw;
     height: 41.4vw;
     border-radius: 100%;
+  }
+}
+@media screen and (max-width: 479px) {
+  .section-need .right {
+    width: 70vw;
+    height: 70vw;
   }
 }
 .section-need .right picture {

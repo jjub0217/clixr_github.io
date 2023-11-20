@@ -3,7 +3,10 @@
   padding-top: 4vw;
   background: #000;
   color: #fff;
-  // border-radius: 3vw;
+
+  @include smallestMobile {
+    padding-top: 35vw;
+  }
 
   .footer-inner {
     width: 100%;
@@ -31,6 +34,10 @@
       padding: 8vw 10vw;
       gap: 4vw;
     }
+
+    @include smallestMobile {
+      padding: 29vw 6vw;
+    }
   }
 
   .left {
@@ -40,13 +47,21 @@
       width: auto;
     }
 
+    @include smallestMobile {
+      width: 100%;
+
+    }
+
     .menu-list {
       display: flex;
       gap: 4.3vw;
 
-
-
       .menu-item {
+
+        @include smallestMobile {
+          flex: 1;
+        }
+
         &>a {
           display: inline-block;
           margin-bottom: 1vw;
@@ -61,6 +76,11 @@
           @include mobile {
             font-size: 3.2vw;
           }
+
+          @include smallestMobile {
+            font-size: 5vw;
+            margin-bottom: 4vw;
+          }
         }
       }
 
@@ -74,6 +94,10 @@
 
         @include mobile {
           font-size: 2.5vw;
+        }
+
+        @include smallestMobile {
+          font-size: 4vw;
         }
 
         .sub-item {
