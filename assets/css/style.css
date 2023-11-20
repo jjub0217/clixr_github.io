@@ -365,6 +365,12 @@ fieldset {
   background-image: linear-gradient(27deg, #738aff, #000);
   border-radius: 4vw;
 }
+@media screen and (max-width: 479px) {
+  .footer .footer-inner {
+    padding: 0 0.2vw 0.2vw 1vw;
+    border-radius: 9vw;
+  }
+}
 .footer .inner {
   padding-top: 3vw;
   padding-bottom: 3vw;
@@ -390,6 +396,8 @@ fieldset {
 @media screen and (max-width: 479px) {
   .footer .inner {
     padding: 29vw 6vw;
+    border-radius: 9vw;
+    background-image: linear-gradient(220deg, #7373ff, rgba(115, 115, 255, 0) 39%);
   }
 }
 .footer .left {
@@ -453,7 +461,10 @@ fieldset {
 }
 @media screen and (max-width: 479px) {
   .footer .left .menu-list .sub-list {
-    font-size: 4vw;
+    font-size: 4.3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
   }
 }
 .footer .left .menu-list .sub-list .sub-item {
