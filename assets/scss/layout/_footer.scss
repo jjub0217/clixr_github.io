@@ -44,6 +44,7 @@
       padding: 29vw 6vw;
       border-radius: 9vw;
       background-image: linear-gradient(220deg, #7373ff, rgba(115, 115, 255, 0) 39%);
+      gap: 8vw;
     }
   }
 
@@ -63,12 +64,11 @@
       display: flex;
       gap: 4.3vw;
 
+      @include smallestMobile {
+        gap: 11.3vw;
+      }
+
       .menu-item {
-
-        @include smallestMobile {
-          flex: 1;
-        }
-
         &>a {
           display: inline-block;
           margin-bottom: 1vw;
@@ -137,6 +137,12 @@
           width: 19vw;
           height: 19vw;
         }
+
+        @include smallestMobile {
+          width: 35.3vw;
+          height: 35.3vw;
+          padding: 1vw;
+        }
       }
 
       .circle {
@@ -148,6 +154,10 @@
 
         @include mobile {
           font-size: 3vw;
+        }
+
+        @include smallestMobile {
+          font-size: 5vw;
         }
       }
     }
@@ -174,6 +184,10 @@
         align-items: center;
       }
 
+      @include smallestMobile {
+        gap: 3vw;
+      }
+
       a {
         display: inline-block;
         font-size: 1.3vw;
@@ -185,6 +199,10 @@
 
         @include tablet {
           font-size: 3vw;
+        }
+
+        @include smallestMobile {
+          font-size: 4vw;
         }
       }
 
@@ -204,8 +222,8 @@
           font-size: 1.5vw;
         }
 
-        @include tablet {
-          // font-size: 2vw;
+        @include smallestMobile {
+          font-size: 3.2vw;
         }
       }
     }

@@ -261,6 +261,7 @@ fieldset {
   .group-util .util-list .btn {
     width: 6.8vw;
     height: 6.8vw;
+    margin-right: 7vw;
   }
 }
 .group-util .util-list .btn .cart-quantity {
@@ -331,6 +332,13 @@ fieldset {
     align-self: auto;
   }
 }
+@media screen and (max-width: 479px) {
+  .group-util .util-list .burgerBtn {
+    width: 5.7vw;
+    height: 3vw;
+    transform: translateY(50%);
+  }
+}
 .group-util .util-list .burgerBtn .bar {
   background-color: #fff;
   position: absolute;
@@ -339,6 +347,11 @@ fieldset {
   height: 0.3vw;
   border-radius: 2vw;
   transition: 0.3s;
+}
+@media screen and (max-width: 479px) {
+  .group-util .util-list .burgerBtn .bar {
+    height: 0.7vw;
+  }
 }
 .group-util .util-list .burgerBtn .bar.positionTop {
   top: 0%;
@@ -398,6 +411,7 @@ fieldset {
     padding: 29vw 6vw;
     border-radius: 9vw;
     background-image: linear-gradient(220deg, #7373ff, rgba(115, 115, 255, 0) 39%);
+    gap: 8vw;
   }
 }
 .footer .left {
@@ -418,8 +432,8 @@ fieldset {
   gap: 4.3vw;
 }
 @media screen and (max-width: 479px) {
-  .footer .left .menu-list .menu-item {
-    flex: 1;
+  .footer .left .menu-list {
+    gap: 11.3vw;
   }
 }
 .footer .left .menu-list .menu-item > a {
@@ -491,6 +505,13 @@ fieldset {
     height: 19vw;
   }
 }
+@media screen and (max-width: 479px) {
+  .footer .center .link-getClixr2 .border {
+    width: 35.3vw;
+    height: 35.3vw;
+    padding: 1vw;
+  }
+}
 .footer .center .link-getClixr2 .circle {
   font-size: 2.4vw;
 }
@@ -502,6 +523,11 @@ fieldset {
 @media screen and (max-width: 767px) {
   .footer .center .link-getClixr2 .circle {
     font-size: 3vw;
+  }
+}
+@media screen and (max-width: 479px) {
+  .footer .center .link-getClixr2 .circle {
+    font-size: 5vw;
   }
 }
 .footer .right {
@@ -527,6 +553,11 @@ fieldset {
     align-items: center;
   }
 }
+@media screen and (max-width: 479px) {
+  .footer .right .copy {
+    gap: 3vw;
+  }
+}
 .footer .right .copy a {
   display: inline-block;
   font-size: 1.3vw;
@@ -540,6 +571,11 @@ fieldset {
 @media screen and (max-width: 991px) {
   .footer .right .copy a {
     font-size: 3vw;
+  }
+}
+@media screen and (max-width: 479px) {
+  .footer .right .copy a {
+    font-size: 4vw;
   }
 }
 .footer .right .copy .underPoint-green {
@@ -557,6 +593,11 @@ fieldset {
 @media screen and (max-width: 991px) {
   .footer .right .copy span {
     font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 479px) {
+  .footer .right .copy span {
+    font-size: 3.2vw;
   }
 }
 .footer .underPoint {
@@ -2559,6 +2600,7 @@ body {
 @media screen and (max-width: 479px) {
   .section-price .inner {
     padding: 0vw 4vw 5vw;
+    gap: 15vw;
   }
 }
 .section-price .left,
@@ -2878,7 +2920,7 @@ body {
 }
 @media screen and (max-width: 479px) {
   .section-free {
-    padding-top: 25vw;
+    padding-top: 29vw;
     padding-bottom: 40vw;
   }
 }
@@ -2966,7 +3008,7 @@ body {
   .section-free .top .text-box {
     border-radius: 10vw;
     align-items: flex-start;
-    padding: 10vw 12vw 12vw 6vw;
+    padding: 10vw 12vw 10vw 6vw;
   }
 }
 .section-free .top .text-box .left {

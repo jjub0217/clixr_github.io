@@ -1999,6 +1999,7 @@ body {
 
     @include smallestMobile {
       padding: 0vw 4vw 5vw;
+      gap: 15vw;
     }
   }
 
@@ -2268,7 +2269,7 @@ body {
   padding-bottom: 11vw;
 
   @include smallestMobile {
-    padding-top: 25vw;
+    padding-top: 29vw;
     padding-bottom: 40vw;
   }
 
@@ -2350,7 +2351,7 @@ body {
       @include smallestMobile {
         border-radius: 10vw;
         align-items: flex-start;
-        padding: 10vw 12vw 12vw 6vw;
+        padding: 10vw 12vw 10vw 6vw;
       }
 
       .left {

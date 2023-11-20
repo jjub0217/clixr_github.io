@@ -146,6 +146,7 @@
       @include smallestMobile {
         width: 6.8vw;
         height: 6.8vw;
+        margin-right: 7vw;
       }
 
       .cart-quantity {
@@ -216,6 +217,12 @@
         align-self: auto;
       }
 
+      @include smallestMobile {
+        width: 5.7vw;
+        height: 3vw;
+        transform: translateY(50%);
+      }
+
       .bar {
         background-color: #fff;
         position: absolute;
@@ -224,6 +231,10 @@
         height: 0.3vw;
         border-radius: 2vw;
         transition: 0.3s;
+
+        @include smallestMobile {
+          height: 0.7vw;
+        }
 
         &.positionTop {
           top: 0%;
