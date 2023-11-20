@@ -1919,6 +1919,7 @@ body {
 }
 .section-audience .border .circle .long-arrow {
   transition: 0.2s;
+  width: 4vw;
 }
 @media screen and (max-width: 991px) {
   .section-audience .border .circle .long-arrow {

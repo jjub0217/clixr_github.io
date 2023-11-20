@@ -1317,6 +1317,7 @@ body {
 
       .long-arrow {
         transition: 0.2s;
+        width: 4vw;
 
         @include tablet {
           width: 5vw;
