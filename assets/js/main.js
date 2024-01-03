@@ -366,7 +366,7 @@ $(function () {
           trigger:$(".section-works .video-box"), 
           start:"0% 100%",
           end:"0% 0%",
-          markers:true,
+          markers:false,
           scrub:1,
         },
       })
