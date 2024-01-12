@@ -385,17 +385,20 @@ $(function () {
 
 
   /** 
-   * //?????일시정지가안되네...
+   * 
    *  @works섹션내에서이미지들이스크롤과미디어쿼리의해상하로움직이는기능
    * 
   */
   $(".section-works .video1 .video-pause").click(function(e){
     e.preventDefault()
-    $(this).toggleClass("active")
-    $(this).siblings("video").attr("loop") 
-    ? $(this).siblings("video").removeAttr('loop') 
-    : $(this).siblings("video").attr('loop', true)
+    if($(this).hasClass("active")){
+        $(this).removeClass("active")
+        $(this).siblings("video")[0].play(); 
 
+    }else{
+      $(this).addClass("active")
+      $(this).siblings("video")[0].pause() 
+    }
   })
 
 
@@ -538,6 +541,4 @@ $(function () {
   { rotate: 28,xPercent: 150},  
   {rotate: 0, xPercent: 0},  
   'a')
-
-
 })

@@ -2352,13 +2352,14 @@ body {
   position: absolute;
   bottom: 1.6vw;
   right: 1.6vw;
-  width: 4vw;
-  height: 4vw;
+  width: 7vw;
+  height: 7vw;
   background: url("../images/Pause-video.png");
   background-size: cover;
 }
 .section-works .video-box .video.video1 .video-pause.active {
   background: url("../images/Play-video.png");
+  background-size: cover;
 }
 .section-works .video-box .video.video2 {
   width: 30vw;
