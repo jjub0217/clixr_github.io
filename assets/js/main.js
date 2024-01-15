@@ -389,16 +389,20 @@ $(function () {
    *  @works섹션내에서이미지들이스크롤과미디어쿼리의해상하로움직이는기능
    * 
   */
-  $(".section-works .video1 .video-pause").click(function(e){
+  const videoPause = (e, target) => {
     e.preventDefault()
-    if($(this).hasClass("active")){
-        $(this).removeClass("active")
-        $(this).siblings("video")[0].play(); 
+    console.log('자동재생멈춤 클릭');
+      if(target.hasClass("active")){
+      target.removeClass("active")
+      target.siblings("video")[0].play(); 
 
     }else{
-      $(this).addClass("active")
-      $(this).siblings("video")[0].pause() 
+      target.addClass("active")
+      target.siblings("video")[0].pause() 
     }
+  } 
+  $(".section-works .video1 .video-pause").click(function(e){
+    videoPause(e, $(this))
   })
 
 
@@ -511,11 +515,15 @@ $(function () {
    *  @faq섹션내에서faqitem의sublist가나타나는기능
    * 
   */
-  $(".faq-item").click(function(e){
+  const faqItemClick = (e, target) => {
     e.preventDefault();
-    if($(this).find('.sub-list').length){
-      $(this).toggleClass('active')
+    console.log('faq-item 클릭');
+    if(target.find('.sub-list').length){
+      target.toggleClass('active')
     }
+  }
+  $(".faq-item").click(function(e){
+    faqItemClick(e , $(this))
   })
   
 
