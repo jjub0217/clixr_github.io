@@ -1,10 +1,10 @@
-# 네이버 비즈니스 스쿨 웹 사이트 클론코딩 
+# 해외 사이트 clixr-ecommerce 웹 사이트 클론코딩
 
   <img alt="logo" src="https://github.com/jjub0217/jjub0217.github.io/assets/62126380/b704d372-d2da-443e-ac70-f9086ad0ad77" width=50>
 
 
 ----
-이 프로젝트는 해외 사이트 audio-pro 웹 사이트 클론코딩 한 페이지입니다.<br>
+이 프로젝트는 해외 사이트 clixr-ecommerce 웹 사이트 클론코딩 한 페이지입니다.<br>
 2023.08.04 ~ 2023.8.24 / 11.05 ~ 11.19 / 2024.01.03, 01.12 ... 근 40일간 페이지를 제작, 수정 및 배포하였습니다. <br>
 
 
@@ -14,6 +14,8 @@
 3. 스크롤을 위아래로 올림에 따라 고정된 영역 내에서 이미지들이 움직인다.  
 4. 스크롤을 위아래로 올림에 따라 텍스트가 커졌다 작아진다.
 5. 메뉴가 아래로 펼쳐졌다 접힌다.
+6. 버튼에 마우스포인터를 갖다대면 버튼속의 화살표들이 움직인다.
+7. 요소들이 스크롤을 내리면 나타난다.
 
 
 ## 프로젝트 웹표준(W3C의 Markup Validation Service)
@@ -23,9 +25,9 @@
 
 ## 프로젝트 웹접근성
 - Open-WAX 결과 : error 0
-<img src="https://github.com/jjub0217/jjub0217.github.io/assets/62126380/a79365e8-ad75-404b-a02d-a0157718b17a" width=500> <br>
+<img src="https://github.com/jjub0217/jjub0217.github.io/assets/62126380/5763ac5b-3892-4df0-810c-66a430c3ed1c" width=500> <br>
 - WAVE 결과: error 0
-<img src="https://github.com/jjub0217/jjub0217.github.io/assets/62126380/482cfff8-9844-40af-bd96-88a07dbf7f13" width=500>
+<img src="https://github.com/jjub0217/jjub0217.github.io/assets/62126380/ef544c74-c474-4f27-b7d1-e115198d5db3" width=500>
 
 
 ## 기술 스택
@@ -46,9 +48,8 @@
 | GSAP      | Standard License, Club GreenSock | 3.12.2ver 2023 GreenSock LLC              |
 
 ## 개선점
-- section-onlineEducation 영역의 tab item 을 클릭시에, floating-menu의 item의 텍스트 컬러도 바뀌는걸 놓쳐서 해당 디자인을 업데이트 하고 싶었음
-- 어떠한 교육을 북마크 아이콘을 클릭하여 저장하면, 서버에 저장되어있다가, 저장했던 교육은 북마크 다시 클릭했을때는 북마크 저장해제 기능을 구현하고 싶었다.(서버가 없으므로 구현 불가.)
-
+- 버튼들에 마우스포인터를 갖다대면 크기가 줄거나, 흔들리거나 하는 애니메이션을 놓쳐서 그것까지 구현하고 싶다. (시간이 없어서 구현하지 못하였다.)
+- 모바일 버전일때의 모바일 gnb를 구현하고 싶다. (시간이 없어서 구현하지 못하였다.)
 
 ## 연락처
 프로젝트에 관한 문의나 버그 리포트는 아래 이메일로 연락주세요.
